@@ -15,19 +15,21 @@ Public Class frmWord
     Public Sub New(ByVal dt As DataTable)
         Initialize(dt)
 
+        'Selecciona la pestaña Mail y muetra los datos 
         RibbonControl1.SelectedPage = MailingsRibbonPage1
+
         DataNavigator1.DataSource = dt
         RichEditControl1.Options.MailMerge.DataSource = dt
         RichEditControl1.Options.MailMerge.ViewMergedData = True
+
+        'Carga una plantilla
         'RichEditControl1.LoadDocument("Pantilla.rtf")
 
     End Sub
 #End Region
 
     Private Sub frmWord_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        '    RichEditControl1.CreateNewDocument()
-        '    RichEditControl1.Options.MailMerge.DataSource = dt
-        '    DataNavigator1.DataSource = dt
+        RichEditControl1.CreateNewDocument()
     End Sub
 
     Private Sub BarButtonItem1_ItemClick(ByVal sender As System.Object, ByVal e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem1.ItemClick
@@ -56,34 +58,10 @@ Public Class frmWord
             End Using
         End If
     End Sub
-
-    Private Sub BarButtonItem2_ItemClick(ByVal sender As System.Object, ByVal e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem2.ItemClick
-        Dim count As Integer = dt.Rows.Count
-
-        Dim saveFileDialog1 As New SaveFileDialog()
-        saveFileDialog1.Filter = "PDF files (*.pdf)|*.pdf|All files (*.*)|*.*"
-        saveFileDialog1.FilterIndex = 1
-        saveFileDialog1.RestoreDirectory = True
-
-        If saveFileDialog1.ShowDialog() = System.Windows.Forms.DialogResult.OK Then
-            Using docServer As New RichEditDocumentServer()
-                Dim options As MailMergeOptions = RichEditControl1.CreateMailMergeOptions()
-
-                options.LastRecordIndex = count
-                options.FirstRecordIndex = 1
-
-                Using fs As New FileStream(saveFileDialog1.FileName, FileMode.Create, System.IO.FileAccess.Write)
-                    RichEditControl1.MailMerge(options, docServer.Document)
-                    docServer.ExportToPdf(fs)
-                End Using
-            End Using
-        End If
-    End Sub
-
     Private Sub BarButtonItem4_ItemClick(ByVal sender As System.Object, ByVal e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem4.ItemClick
         Dim myMergeOptions As MailMergeOptions = RichEditControl1.Document.CreateMailMergeOptions()
         myMergeOptions.DataSource = dt
-        myMergeOptions.FirstRecordIndex = 1
+        myMergeOptions.FirstRecordIndex = 0
         myMergeOptions.LastRecordIndex = dt.Rows.Count
         myMergeOptions.MergeMode = MergeMode.NewSection
 
@@ -97,6 +75,5 @@ Public Class frmWord
         If fName <> "" Then
             RichEditControl1.Document.MailMerge(myMergeOptions, fileDialog.FileName, DocumentFormat.OpenXml)
         End If
-        'System.Diagnostics.Process.Start(fileDialog.FileName)
     End Sub
 End Class

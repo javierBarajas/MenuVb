@@ -17,6 +17,7 @@ C:\Projects\MenuVb\Menu\Menu\bin\Debug\Menu.exe
 C:\Projects\MenuVb\Menu\Menu\bin\Debug\Menu.pdb
 C:\Projects\MenuVb\Menu\Menu\bin\Debug\Menu.xml
 C:\Projects\MenuVb\Menu\Menu\obj\x86\Debug\Menu.frmExcel.resources
+C:\Projects\MenuVb\Menu\Menu\obj\x86\Debug\Menu.frmFiltros.resources
 C:\Projects\MenuVb\Menu\Menu\obj\x86\Debug\Menu.frmMenu.resources
 C:\Projects\MenuVb\Menu\Menu\obj\x86\Debug\Menu.frmWord.resources
 C:\Projects\MenuVb\Menu\Menu\obj\x86\Debug\Menu.Resources.resources
@@ -25,4 +26,3 @@ C:\Projects\MenuVb\Menu\Menu\obj\x86\Debug\Menu.exe.licenses
 C:\Projects\MenuVb\Menu\Menu\obj\x86\Debug\Menu.exe
 C:\Projects\MenuVb\Menu\Menu\obj\x86\Debug\Menu.xml
 C:\Projects\MenuVb\Menu\Menu\obj\x86\Debug\Menu.pdb
-C:\Projects\MenuVb\Menu\Menu\obj\x86\Debug\Menu.frmFiltros.resources

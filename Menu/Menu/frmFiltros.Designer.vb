@@ -22,50 +22,142 @@ Partial Class frmFiltros
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.cbCity = New System.Windows.Forms.ComboBox()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.cbSt = New System.Windows.Forms.ComboBox()
+        Me.gcFiltros = New System.Windows.Forms.GroupBox()
+        Me.gcCity = New System.Windows.Forms.GroupBox()
+        Me.gcSt = New System.Windows.Forms.GroupBox()
+        Me.gcZipCode = New System.Windows.Forms.GroupBox()
+        Me.gcCountry = New System.Windows.Forms.GroupBox()
+        Me.cbZipCode = New System.Windows.Forms.ComboBox()
+        Me.cbCountry = New System.Windows.Forms.ComboBox()
+        Me.gcFiltros.SuspendLayout()
+        Me.gcCity.SuspendLayout()
+        Me.gcSt.SuspendLayout()
+        Me.gcZipCode.SuspendLayout()
+        Me.gcCountry.SuspendLayout()
         Me.SuspendLayout()
         '
-        'ComboBox1
+        'cbCity
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(13, 32)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(163, 21)
-        Me.ComboBox1.TabIndex = 0
+        Me.cbCity.FormattingEnabled = True
+        Me.cbCity.Location = New System.Drawing.Point(9, 19)
+        Me.cbCity.Name = "cbCity"
+        Me.cbCity.Size = New System.Drawing.Size(168, 21)
+        Me.cbCity.TabIndex = 0
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(134, 128)
+        Me.Button1.Location = New System.Drawing.Point(152, 301)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(66, 19)
+        Me.Button1.Size = New System.Drawing.Size(79, 22)
         Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Run"
+        Me.Button1.Text = "Filtrar"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'ComboBox2
+        'cbSt
         '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(17, 81)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(158, 21)
-        Me.ComboBox2.TabIndex = 2
+        Me.cbSt.FormattingEnabled = True
+        Me.cbSt.Location = New System.Drawing.Point(9, 19)
+        Me.cbSt.Name = "cbSt"
+        Me.cbSt.Size = New System.Drawing.Size(168, 21)
+        Me.cbSt.TabIndex = 2
+        '
+        'gcFiltros
+        '
+        Me.gcFiltros.Controls.Add(Me.gcCountry)
+        Me.gcFiltros.Controls.Add(Me.gcZipCode)
+        Me.gcFiltros.Controls.Add(Me.gcSt)
+        Me.gcFiltros.Controls.Add(Me.gcCity)
+        Me.gcFiltros.Location = New System.Drawing.Point(12, 12)
+        Me.gcFiltros.Name = "gcFiltros"
+        Me.gcFiltros.Size = New System.Drawing.Size(219, 272)
+        Me.gcFiltros.TabIndex = 3
+        Me.gcFiltros.TabStop = False
+        Me.gcFiltros.Text = "Filtrar por:"
+        '
+        'gcCity
+        '
+        Me.gcCity.Controls.Add(Me.cbCity)
+        Me.gcCity.Location = New System.Drawing.Point(15, 19)
+        Me.gcCity.Name = "gcCity"
+        Me.gcCity.Size = New System.Drawing.Size(187, 54)
+        Me.gcCity.TabIndex = 3
+        Me.gcCity.TabStop = False
+        Me.gcCity.Text = "City"
+        '
+        'gcSt
+        '
+        Me.gcSt.Controls.Add(Me.cbSt)
+        Me.gcSt.Location = New System.Drawing.Point(15, 79)
+        Me.gcSt.Name = "gcSt"
+        Me.gcSt.Size = New System.Drawing.Size(187, 55)
+        Me.gcSt.TabIndex = 4
+        Me.gcSt.TabStop = False
+        Me.gcSt.Text = "St."
+        '
+        'gcZipCode
+        '
+        Me.gcZipCode.Controls.Add(Me.cbZipCode)
+        Me.gcZipCode.Location = New System.Drawing.Point(15, 140)
+        Me.gcZipCode.Name = "gcZipCode"
+        Me.gcZipCode.Size = New System.Drawing.Size(187, 53)
+        Me.gcZipCode.TabIndex = 5
+        Me.gcZipCode.TabStop = False
+        Me.gcZipCode.Text = "ZipCode"
+        '
+        'gcCountry
+        '
+        Me.gcCountry.Controls.Add(Me.cbCountry)
+        Me.gcCountry.Location = New System.Drawing.Point(15, 199)
+        Me.gcCountry.Name = "gcCountry"
+        Me.gcCountry.Size = New System.Drawing.Size(187, 53)
+        Me.gcCountry.TabIndex = 6
+        Me.gcCountry.TabStop = False
+        Me.gcCountry.Text = "Country"
+        '
+        'cbZipCode
+        '
+        Me.cbZipCode.FormattingEnabled = True
+        Me.cbZipCode.Location = New System.Drawing.Point(9, 19)
+        Me.cbZipCode.Name = "cbZipCode"
+        Me.cbZipCode.Size = New System.Drawing.Size(168, 21)
+        Me.cbZipCode.TabIndex = 0
+        '
+        'cbCountry
+        '
+        Me.cbCountry.FormattingEnabled = True
+        Me.cbCountry.Location = New System.Drawing.Point(9, 19)
+        Me.cbCountry.Name = "cbCountry"
+        Me.cbCountry.Size = New System.Drawing.Size(168, 21)
+        Me.cbCountry.TabIndex = 0
         '
         'frmFiltros
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(216, 152)
-        Me.Controls.Add(Me.ComboBox2)
+        Me.ClientSize = New System.Drawing.Size(246, 336)
+        Me.Controls.Add(Me.gcFiltros)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.ComboBox1)
         Me.Name = "frmFiltros"
         Me.Text = "frmFiltros"
+        Me.gcFiltros.ResumeLayout(False)
+        Me.gcCity.ResumeLayout(False)
+        Me.gcSt.ResumeLayout(False)
+        Me.gcZipCode.ResumeLayout(False)
+        Me.gcCountry.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents cbCity As System.Windows.Forms.ComboBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
+    Friend WithEvents cbSt As System.Windows.Forms.ComboBox
+    Friend WithEvents gcFiltros As System.Windows.Forms.GroupBox
+    Friend WithEvents gcCountry As System.Windows.Forms.GroupBox
+    Friend WithEvents cbCountry As System.Windows.Forms.ComboBox
+    Friend WithEvents gcZipCode As System.Windows.Forms.GroupBox
+    Friend WithEvents cbZipCode As System.Windows.Forms.ComboBox
+    Friend WithEvents gcSt As System.Windows.Forms.GroupBox
+    Friend WithEvents gcCity As System.Windows.Forms.GroupBox
 End Class

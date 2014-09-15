@@ -151,8 +151,6 @@ Public Class frmMenu
             frmExcel.Create()
             Dim frmFiltros As New frmFiltros(frmExcel.ExportToDataTable(0))
             frmFiltros.Show()
-            'Dim frmWord As New frmWord(frmExcel.ExportToDataTable(0))
-            'frmWord.Show()
         End If
     End Sub
 
