@@ -56,4 +56,47 @@ Public Class frmWord
             End Using
         End If
     End Sub
+
+    Private Sub BarButtonItem2_ItemClick(ByVal sender As System.Object, ByVal e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem2.ItemClick
+        Dim count As Integer = dt.Rows.Count
+
+        Dim saveFileDialog1 As New SaveFileDialog()
+        saveFileDialog1.Filter = "PDF files (*.pdf)|*.pdf|All files (*.*)|*.*"
+        saveFileDialog1.FilterIndex = 1
+        saveFileDialog1.RestoreDirectory = True
+
+        If saveFileDialog1.ShowDialog() = System.Windows.Forms.DialogResult.OK Then
+            Using docServer As New RichEditDocumentServer()
+                Dim options As MailMergeOptions = RichEditControl1.CreateMailMergeOptions()
+
+                options.LastRecordIndex = count
+                options.FirstRecordIndex = 1
+
+                Using fs As New FileStream(saveFileDialog1.FileName, FileMode.Create, System.IO.FileAccess.Write)
+                    RichEditControl1.MailMerge(options, docServer.Document)
+                    docServer.ExportToPdf(fs)
+                End Using
+            End Using
+        End If
+    End Sub
+
+    Private Sub BarButtonItem4_ItemClick(ByVal sender As System.Object, ByVal e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem4.ItemClick
+        Dim myMergeOptions As MailMergeOptions = RichEditControl1.Document.CreateMailMergeOptions()
+        myMergeOptions.DataSource = dt
+        myMergeOptions.FirstRecordIndex = 1
+        myMergeOptions.LastRecordIndex = dt.Rows.Count
+        myMergeOptions.MergeMode = MergeMode.NewSection
+
+        Dim fileDialog As New SaveFileDialog()
+        fileDialog.Filter = "MS Word 2007 documents (*.docx)|*.docx|All files (*.*)|*.*"
+        fileDialog.FilterIndex = 1
+        fileDialog.RestoreDirectory = True
+
+        fileDialog.ShowDialog()
+        Dim fName As String = fileDialog.FileName
+        If fName <> "" Then
+            RichEditControl1.Document.MailMerge(myMergeOptions, fileDialog.FileName, DocumentFormat.OpenXml)
+        End If
+        'System.Diagnostics.Process.Start(fileDialog.FileName)
+    End Sub
 End Class
