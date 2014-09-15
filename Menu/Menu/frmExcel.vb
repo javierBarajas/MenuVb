@@ -72,6 +72,7 @@ Public Class frmExcel
         Dim dataTable As DataTable = worksheet.CreateDataTable(worksheet.GetUsedRange(), True)
         Dim exporter As DataTableExporter = worksheet.CreateDataTableExporter(worksheet.GetUsedRange(), dataTable, True)
         exporter.Export()
+        Return dataTable
     End Function
 
     Public Sub Create()

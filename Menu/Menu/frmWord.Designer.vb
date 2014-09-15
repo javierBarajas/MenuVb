@@ -22,6 +22,7 @@ Partial Class frmWord
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmWord))
         Dim GalleryItemGroup1 As DevExpress.XtraBars.Ribbon.GalleryItemGroup = New DevExpress.XtraBars.Ribbon.GalleryItemGroup()
         Dim GalleryItemGroup2 As DevExpress.XtraBars.Ribbon.GalleryItemGroup = New DevExpress.XtraBars.Ribbon.GalleryItemGroup()
@@ -323,6 +324,7 @@ Partial Class frmWord
         Me.ShowRibbonPageGroup1 = New DevExpress.XtraRichEdit.UI.ShowRibbonPageGroup()
         Me.ZoomRibbonPageGroup1 = New DevExpress.XtraRichEdit.UI.ZoomRibbonPageGroup()
         Me.RichEditBarController1 = New DevExpress.XtraRichEdit.UI.RichEditBarController()
+        Me.DataNavigator1 = New DevExpress.XtraEditors.DataNavigator()
         CType(Me.RibbonControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemFontEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemRichEditFontSizeEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -2268,11 +2270,21 @@ Partial Class frmWord
         Me.RichEditBarController1.BarItems.Add(Me.FloatingObjectSendBehindTextItem1)
         Me.RichEditBarController1.Control = Me.RichEditControl1
         '
+        'DataNavigator1
+        '
+        Me.DataNavigator1.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.DataNavigator1.Location = New System.Drawing.Point(0, 408)
+        Me.DataNavigator1.Name = "DataNavigator1"
+        Me.DataNavigator1.Size = New System.Drawing.Size(681, 24)
+        Me.DataNavigator1.TabIndex = 3
+        Me.DataNavigator1.Text = "DataNavigator1"
+        '
         'frmWord
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(681, 432)
+        Me.Controls.Add(Me.DataNavigator1)
         Me.Controls.Add(Me.RichEditControl1)
         Me.Controls.Add(Me.RibbonControl1)
         Me.Name = "frmWord"
@@ -2584,4 +2596,5 @@ Partial Class frmWord
     Friend WithEvents ShowRibbonPageGroup1 As DevExpress.XtraRichEdit.UI.ShowRibbonPageGroup
     Friend WithEvents ZoomRibbonPageGroup1 As DevExpress.XtraRichEdit.UI.ZoomRibbonPageGroup
     Friend WithEvents RichEditBarController1 As DevExpress.XtraRichEdit.UI.RichEditBarController
+    Friend WithEvents DataNavigator1 As DevExpress.XtraEditors.DataNavigator
 End Class
