@@ -2,7 +2,6 @@ Imports DevExpress.Spreadsheet
 Imports DevExpress.Spreadsheet.Export
 Imports System.IO
 
-
 Public Class frmExcel
 
 #Region "Variables"
