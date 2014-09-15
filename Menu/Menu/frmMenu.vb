@@ -54,7 +54,10 @@
                 frmExcel.FirstColIndex = 0
                 frmExcel.FirstRowIndex = 0
                 frmExcel.Create()
-                frmExcel.ExportToDataTable(0)
+                Dim dt As DataTable = frmExcel.ExportToDataTable(0)
+
+                frmExcel = New frmExcel(dt)
+                frmExcel.Create()
                 frmExcel.Show()
             End If
         End If
