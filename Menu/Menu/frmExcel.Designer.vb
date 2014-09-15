@@ -499,11 +499,7 @@ Partial Class frmExcel
         Me.SpreadsheetCommandBarButtonItem54 = New DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem()
         Me.SpreadsheetCommandBarButtonItem55 = New DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem()
         Me.SpreadsheetCommandBarButtonGalleryDropDownItem1 = New DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonGalleryDropDownItem()
-<<<<<<< HEAD
         Me.CommandBarGalleryDropDown2 = New DevExpress.XtraBars.Commands.CommandBarGalleryDropDown(Me.components)
-=======
-        Me.CommandBarGalleryDropDown26 = New DevExpress.XtraBars.Commands.CommandBarGalleryDropDown()
->>>>>>> origin/master
         Me.RibbonControl1 = New DevExpress.XtraBars.Ribbon.RibbonControl()
         Me.SpreadsheetCommandBarButtonItem1 = New DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem()
         Me.SpreadsheetCommandBarButtonItem2 = New DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem()
@@ -548,11 +544,7 @@ Partial Class frmExcel
         Me.SpreadsheetCommandBarButtonItem28 = New DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem()
         Me.ChangeBorderLineColorItem1 = New DevExpress.XtraSpreadsheet.UI.ChangeBorderLineColorItem()
         Me.ChangeBorderLineStyleItem1 = New DevExpress.XtraSpreadsheet.UI.ChangeBorderLineStyleItem()
-<<<<<<< HEAD
         Me.CommandBarGalleryDropDown1 = New DevExpress.XtraBars.Commands.CommandBarGalleryDropDown(Me.components)
-=======
-        Me.CommandBarGalleryDropDown25 = New DevExpress.XtraBars.Commands.CommandBarGalleryDropDown()
->>>>>>> origin/master
         Me.BarButtonGroup4 = New DevExpress.XtraBars.BarButtonGroup()
         Me.ChangeCellFillColorItem1 = New DevExpress.XtraSpreadsheet.UI.ChangeCellFillColorItem()
         Me.ChangeFontColorItem1 = New DevExpress.XtraSpreadsheet.UI.ChangeFontColorItem()
@@ -589,24 +581,14 @@ Partial Class frmExcel
         Me.SpreadsheetCommandBarButtonItem41 = New DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem()
         Me.SpreadsheetCommandBarButtonItem42 = New DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem()
         Me.SpreadsheetCommandBarButtonGalleryDropDownItem2 = New DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonGalleryDropDownItem()
-<<<<<<< HEAD
         Me.CommandBarGalleryDropDown3 = New DevExpress.XtraBars.Commands.CommandBarGalleryDropDown(Me.components)
         Me.SpreadsheetCommandBarButtonGalleryDropDownItem3 = New DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonGalleryDropDownItem()
         Me.CommandBarGalleryDropDown4 = New DevExpress.XtraBars.Commands.CommandBarGalleryDropDown(Me.components)
-=======
-        Me.CommandBarGalleryDropDown27 = New DevExpress.XtraBars.Commands.CommandBarGalleryDropDown()
-        Me.SpreadsheetCommandBarButtonGalleryDropDownItem3 = New DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonGalleryDropDownItem()
-        Me.CommandBarGalleryDropDown28 = New DevExpress.XtraBars.Commands.CommandBarGalleryDropDown()
->>>>>>> origin/master
         Me.SpreadsheetCommandBarButtonItem56 = New DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem()
         Me.SpreadsheetCommandBarButtonItem57 = New DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem()
         Me.SpreadsheetCommandBarSubItem7 = New DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarSubItem()
         Me.GalleryFormatAsTableItem1 = New DevExpress.XtraSpreadsheet.UI.GalleryFormatAsTableItem()
-<<<<<<< HEAD
         Me.CommandBarGalleryDropDown5 = New DevExpress.XtraBars.Commands.CommandBarGalleryDropDown(Me.components)
-=======
-        Me.CommandBarGalleryDropDown29 = New DevExpress.XtraBars.Commands.CommandBarGalleryDropDown()
->>>>>>> origin/master
         Me.GalleryChangeStyleItem1 = New DevExpress.XtraSpreadsheet.UI.GalleryChangeStyleItem()
         Me.SpreadsheetCommandBarSubItem8 = New DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarSubItem()
         Me.SpreadsheetCommandBarButtonItem58 = New DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem()
@@ -666,7 +648,6 @@ Partial Class frmExcel
         Me.SpreadsheetCommandBarButtonItem102 = New DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem()
         Me.SpreadsheetCommandBarButtonItem103 = New DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem()
         Me.SpreadsheetCommandBarButtonGalleryDropDownItem4 = New DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonGalleryDropDownItem()
-<<<<<<< HEAD
         Me.CommandBarGalleryDropDown6 = New DevExpress.XtraBars.Commands.CommandBarGalleryDropDown(Me.components)
         Me.SpreadsheetCommandBarButtonGalleryDropDownItem5 = New DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonGalleryDropDownItem()
         Me.CommandBarGalleryDropDown7 = New DevExpress.XtraBars.Commands.CommandBarGalleryDropDown(Me.components)
@@ -680,21 +661,6 @@ Partial Class frmExcel
         Me.CommandBarGalleryDropDown11 = New DevExpress.XtraBars.Commands.CommandBarGalleryDropDown(Me.components)
         Me.SpreadsheetCommandBarButtonGalleryDropDownItem10 = New DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonGalleryDropDownItem()
         Me.CommandBarGalleryDropDown12 = New DevExpress.XtraBars.Commands.CommandBarGalleryDropDown(Me.components)
-=======
-        Me.CommandBarGalleryDropDown30 = New DevExpress.XtraBars.Commands.CommandBarGalleryDropDown()
-        Me.SpreadsheetCommandBarButtonGalleryDropDownItem5 = New DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonGalleryDropDownItem()
-        Me.CommandBarGalleryDropDown31 = New DevExpress.XtraBars.Commands.CommandBarGalleryDropDown()
-        Me.SpreadsheetCommandBarButtonGalleryDropDownItem6 = New DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonGalleryDropDownItem()
-        Me.CommandBarGalleryDropDown32 = New DevExpress.XtraBars.Commands.CommandBarGalleryDropDown()
-        Me.SpreadsheetCommandBarButtonGalleryDropDownItem7 = New DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonGalleryDropDownItem()
-        Me.CommandBarGalleryDropDown33 = New DevExpress.XtraBars.Commands.CommandBarGalleryDropDown()
-        Me.SpreadsheetCommandBarButtonGalleryDropDownItem8 = New DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonGalleryDropDownItem()
-        Me.CommandBarGalleryDropDown34 = New DevExpress.XtraBars.Commands.CommandBarGalleryDropDown()
-        Me.SpreadsheetCommandBarButtonGalleryDropDownItem9 = New DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonGalleryDropDownItem()
-        Me.CommandBarGalleryDropDown35 = New DevExpress.XtraBars.Commands.CommandBarGalleryDropDown()
-        Me.SpreadsheetCommandBarButtonGalleryDropDownItem10 = New DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonGalleryDropDownItem()
-        Me.CommandBarGalleryDropDown36 = New DevExpress.XtraBars.Commands.CommandBarGalleryDropDown()
->>>>>>> origin/master
         Me.SpreadsheetCommandBarButtonItem104 = New DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem()
         Me.SpreadsheetCommandBarButtonItem105 = New DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem()
         Me.SpreadsheetCommandBarSubItem17 = New DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarSubItem()
@@ -760,7 +726,6 @@ Partial Class frmExcel
         Me.GalleryChartLayoutItem1 = New DevExpress.XtraSpreadsheet.UI.GalleryChartLayoutItem()
         Me.GalleryChartStyleItem1 = New DevExpress.XtraSpreadsheet.UI.GalleryChartStyleItem()
         Me.SpreadsheetCommandBarButtonGalleryDropDownItem11 = New DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonGalleryDropDownItem()
-<<<<<<< HEAD
         Me.CommandBarGalleryDropDown13 = New DevExpress.XtraBars.Commands.CommandBarGalleryDropDown(Me.components)
         Me.SpreadsheetCommandBarSubItem26 = New DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarSubItem()
         Me.SpreadsheetCommandBarButtonGalleryDropDownItem12 = New DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonGalleryDropDownItem()
@@ -787,34 +752,6 @@ Partial Class frmExcel
         Me.CommandBarGalleryDropDown23 = New DevExpress.XtraBars.Commands.CommandBarGalleryDropDown(Me.components)
         Me.SpreadsheetCommandBarButtonGalleryDropDownItem22 = New DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonGalleryDropDownItem()
         Me.CommandBarGalleryDropDown24 = New DevExpress.XtraBars.Commands.CommandBarGalleryDropDown(Me.components)
-=======
-        Me.CommandBarGalleryDropDown37 = New DevExpress.XtraBars.Commands.CommandBarGalleryDropDown()
-        Me.SpreadsheetCommandBarSubItem26 = New DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarSubItem()
-        Me.SpreadsheetCommandBarButtonGalleryDropDownItem12 = New DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonGalleryDropDownItem()
-        Me.CommandBarGalleryDropDown38 = New DevExpress.XtraBars.Commands.CommandBarGalleryDropDown()
-        Me.SpreadsheetCommandBarButtonGalleryDropDownItem13 = New DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonGalleryDropDownItem()
-        Me.CommandBarGalleryDropDown39 = New DevExpress.XtraBars.Commands.CommandBarGalleryDropDown()
-        Me.SpreadsheetCommandBarButtonGalleryDropDownItem14 = New DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonGalleryDropDownItem()
-        Me.CommandBarGalleryDropDown40 = New DevExpress.XtraBars.Commands.CommandBarGalleryDropDown()
-        Me.SpreadsheetCommandBarButtonGalleryDropDownItem15 = New DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonGalleryDropDownItem()
-        Me.CommandBarGalleryDropDown41 = New DevExpress.XtraBars.Commands.CommandBarGalleryDropDown()
-        Me.SpreadsheetCommandBarSubItem27 = New DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarSubItem()
-        Me.SpreadsheetCommandBarButtonGalleryDropDownItem16 = New DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonGalleryDropDownItem()
-        Me.CommandBarGalleryDropDown42 = New DevExpress.XtraBars.Commands.CommandBarGalleryDropDown()
-        Me.SpreadsheetCommandBarButtonGalleryDropDownItem17 = New DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonGalleryDropDownItem()
-        Me.CommandBarGalleryDropDown43 = New DevExpress.XtraBars.Commands.CommandBarGalleryDropDown()
-        Me.SpreadsheetCommandBarSubItem28 = New DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarSubItem()
-        Me.SpreadsheetCommandBarButtonGalleryDropDownItem18 = New DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonGalleryDropDownItem()
-        Me.CommandBarGalleryDropDown44 = New DevExpress.XtraBars.Commands.CommandBarGalleryDropDown()
-        Me.SpreadsheetCommandBarButtonGalleryDropDownItem19 = New DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonGalleryDropDownItem()
-        Me.CommandBarGalleryDropDown45 = New DevExpress.XtraBars.Commands.CommandBarGalleryDropDown()
-        Me.SpreadsheetCommandBarButtonGalleryDropDownItem20 = New DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonGalleryDropDownItem()
-        Me.CommandBarGalleryDropDown46 = New DevExpress.XtraBars.Commands.CommandBarGalleryDropDown()
-        Me.SpreadsheetCommandBarButtonGalleryDropDownItem21 = New DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonGalleryDropDownItem()
-        Me.CommandBarGalleryDropDown47 = New DevExpress.XtraBars.Commands.CommandBarGalleryDropDown()
-        Me.SpreadsheetCommandBarButtonGalleryDropDownItem22 = New DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonGalleryDropDownItem()
-        Me.CommandBarGalleryDropDown48 = New DevExpress.XtraBars.Commands.CommandBarGalleryDropDown()
->>>>>>> origin/master
         Me.BarStaticItem1 = New DevExpress.XtraBars.BarStaticItem()
         Me.RenameTableItem1 = New DevExpress.XtraSpreadsheet.UI.RenameTableItem()
         Me.RepositoryItemTextEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemTextEdit()
@@ -1141,11 +1078,7 @@ Partial Class frmExcel
         Me.RibbonControl1.ExpandCollapseItem.Id = 0
         Me.RibbonControl1.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.RibbonControl1.ExpandCollapseItem, Me.SpreadsheetCommandBarButtonItem1, Me.SpreadsheetCommandBarButtonItem2, Me.SpreadsheetCommandBarButtonItem3, Me.SpreadsheetCommandBarButtonItem4, Me.SpreadsheetCommandBarButtonItem5, Me.SpreadsheetCommandBarButtonItem6, Me.SpreadsheetCommandBarButtonItem7, Me.SpreadsheetCommandBarButtonItem8, Me.SpreadsheetCommandBarButtonItem9, Me.SpreadsheetCommandBarButtonItem10, Me.SpreadsheetCommandBarButtonItem11, Me.SpreadsheetCommandBarButtonItem12, Me.SpreadsheetCommandBarButtonItem13, Me.BarButtonGroup1, Me.ChangeFontNameItem1, Me.ChangeFontSizeItem1, Me.SpreadsheetCommandBarButtonItem14, Me.SpreadsheetCommandBarButtonItem15, Me.BarButtonGroup2, Me.SpreadsheetCommandBarCheckItem1, Me.SpreadsheetCommandBarCheckItem2, Me.SpreadsheetCommandBarCheckItem3, Me.SpreadsheetCommandBarCheckItem4, Me.BarButtonGroup3, Me.SpreadsheetCommandBarSubItem1, Me.SpreadsheetCommandBarButtonItem16, Me.SpreadsheetCommandBarButtonItem17, Me.SpreadsheetCommandBarButtonItem18, Me.SpreadsheetCommandBarButtonItem19, Me.SpreadsheetCommandBarButtonItem20, Me.SpreadsheetCommandBarButtonItem21, Me.SpreadsheetCommandBarButtonItem22, Me.SpreadsheetCommandBarButtonItem23, Me.SpreadsheetCommandBarButtonItem24, Me.SpreadsheetCommandBarButtonItem25, Me.SpreadsheetCommandBarButtonItem26, Me.SpreadsheetCommandBarButtonItem27, Me.SpreadsheetCommandBarButtonItem28, Me.ChangeBorderLineColorItem1, Me.ChangeBorderLineStyleItem1, Me.BarButtonGroup4, Me.ChangeCellFillColorItem1, Me.ChangeFontColorItem1, Me.BarButtonGroup5, Me.SpreadsheetCommandBarCheckItem5, Me.SpreadsheetCommandBarCheckItem6, Me.SpreadsheetCommandBarCheckItem7, Me.BarButtonGroup6, Me.SpreadsheetCommandBarCheckItem8, Me.SpreadsheetCommandBarCheckItem9, Me.SpreadsheetCommandBarCheckItem10, Me.BarButtonGroup7, Me.SpreadsheetCommandBarButtonItem29, Me.SpreadsheetCommandBarButtonItem30, Me.SpreadsheetCommandBarCheckItem11, Me.SpreadsheetCommandBarSubItem2, Me.SpreadsheetCommandBarCheckItem12, Me.SpreadsheetCommandBarButtonItem31, Me.SpreadsheetCommandBarButtonItem32, Me.SpreadsheetCommandBarButtonItem33, Me.BarButtonGroup8, Me.ChangeNumberFormatItem1, Me.BarButtonGroup9, Me.SpreadsheetCommandBarSubItem3, Me.SpreadsheetCommandBarButtonItem34, Me.SpreadsheetCommandBarButtonItem35, Me.SpreadsheetCommandBarButtonItem36, Me.SpreadsheetCommandBarButtonItem37, Me.SpreadsheetCommandBarButtonItem38, Me.SpreadsheetCommandBarButtonItem39, Me.SpreadsheetCommandBarButtonItem40, Me.BarButtonGroup10, Me.SpreadsheetCommandBarButtonItem41, Me.SpreadsheetCommandBarButtonItem42, Me.SpreadsheetCommandBarSubItem4, Me.SpreadsheetCommandBarButtonItem43, Me.SpreadsheetCommandBarButtonItem44, Me.SpreadsheetCommandBarButtonItem45, Me.SpreadsheetCommandBarButtonItem46, Me.SpreadsheetCommandBarButtonItem47, Me.SpreadsheetCommandBarButtonItem48, Me.SpreadsheetCommandBarButtonItem49, Me.SpreadsheetCommandBarSubItem5, Me.SpreadsheetCommandBarButtonItem50, Me.SpreadsheetCommandBarButtonItem51, Me.SpreadsheetCommandBarButtonItem52, Me.SpreadsheetCommandBarButtonItem53, Me.SpreadsheetCommandBarButtonItem54, Me.SpreadsheetCommandBarButtonItem55, Me.SpreadsheetCommandBarSubItem6, Me.SpreadsheetCommandBarButtonGalleryDropDownItem1, Me.SpreadsheetCommandBarButtonGalleryDropDownItem2, Me.SpreadsheetCommandBarButtonGalleryDropDownItem3, Me.SpreadsheetCommandBarButtonItem56, Me.SpreadsheetCommandBarButtonItem57, Me.SpreadsheetCommandBarSubItem7, Me.GalleryFormatAsTableItem1, Me.GalleryChangeStyleItem1, Me.SpreadsheetCommandBarSubItem8, Me.SpreadsheetCommandBarButtonItem58, Me.SpreadsheetCommandBarButtonItem59, Me.SpreadsheetCommandBarButtonItem60, Me.SpreadsheetCommandBarSubItem9, Me.SpreadsheetCommandBarButtonItem61, Me.SpreadsheetCommandBarButtonItem62, Me.SpreadsheetCommandBarButtonItem63, Me.SpreadsheetCommandBarSubItem10, Me.SpreadsheetCommandBarButtonItem64, Me.SpreadsheetCommandBarButtonItem65, Me.SpreadsheetCommandBarButtonItem66, Me.SpreadsheetCommandBarButtonItem67, Me.SpreadsheetCommandBarButtonItem68, Me.SpreadsheetCommandBarButtonItem69, Me.SpreadsheetCommandBarButtonItem70, Me.SpreadsheetCommandBarButtonItem71, Me.SpreadsheetCommandBarButtonItem72, Me.SpreadsheetCommandBarButtonItem73, Me.SpreadsheetCommandBarButtonItem74, Me.SpreadsheetCommandBarSubItem11, Me.SpreadsheetCommandBarButtonItem75, Me.ChangeSheetTabColorItem1, Me.SpreadsheetCommandBarButtonItem76, Me.SpreadsheetCommandBarCheckItem13, Me.SpreadsheetCommandBarButtonItem77, Me.SpreadsheetCommandBarSubItem12, Me.SpreadsheetCommandBarButtonItem78, Me.SpreadsheetCommandBarButtonItem79, Me.SpreadsheetCommandBarButtonItem80, Me.SpreadsheetCommandBarButtonItem81, Me.SpreadsheetCommandBarButtonItem82, Me.SpreadsheetCommandBarSubItem13, Me.SpreadsheetCommandBarButtonItem83, Me.SpreadsheetCommandBarButtonItem84, Me.SpreadsheetCommandBarButtonItem85, Me.SpreadsheetCommandBarButtonItem86, Me.SpreadsheetCommandBarSubItem14, Me.SpreadsheetCommandBarButtonItem87, Me.SpreadsheetCommandBarButtonItem88, Me.SpreadsheetCommandBarButtonItem89, Me.SpreadsheetCommandBarButtonItem90, Me.SpreadsheetCommandBarButtonItem91, Me.SpreadsheetCommandBarButtonItem92, Me.SpreadsheetCommandBarSubItem15, Me.SpreadsheetCommandBarButtonItem93, Me.SpreadsheetCommandBarButtonItem94, Me.SpreadsheetCommandBarSubItem16, Me.SpreadsheetCommandBarButtonItem95, Me.SpreadsheetCommandBarButtonItem96, Me.SpreadsheetCommandBarButtonItem97, Me.SpreadsheetCommandBarButtonItem98, Me.SpreadsheetCommandBarButtonItem99, Me.SpreadsheetCommandBarButtonItem100, Me.SpreadsheetCommandBarButtonItem101, Me.SpreadsheetCommandBarButtonItem102, Me.SpreadsheetCommandBarButtonItem103, Me.SpreadsheetCommandBarButtonGalleryDropDownItem4, Me.SpreadsheetCommandBarButtonGalleryDropDownItem5, Me.SpreadsheetCommandBarButtonGalleryDropDownItem6, Me.SpreadsheetCommandBarButtonGalleryDropDownItem7, Me.SpreadsheetCommandBarButtonGalleryDropDownItem8, Me.SpreadsheetCommandBarButtonGalleryDropDownItem9, Me.SpreadsheetCommandBarButtonGalleryDropDownItem10, Me.SpreadsheetCommandBarButtonItem104, Me.SpreadsheetCommandBarButtonItem105, Me.SpreadsheetCommandBarSubItem17, Me.SpreadsheetCommandBarCheckItem14, Me.SpreadsheetCommandBarCheckItem15, Me.SpreadsheetCommandBarCheckItem16, Me.SpreadsheetCommandBarSubItem18, Me.SpreadsheetCommandBarCheckItem17, Me.SpreadsheetCommandBarCheckItem18, Me.PageSetupPaperKindItem1, Me.SpreadsheetCommandBarSubItem19, Me.SpreadsheetCommandBarButtonItem106, Me.SpreadsheetCommandBarButtonItem107, Me.SpreadsheetCommandBarButtonItem108, Me.SpreadsheetCommandBarCheckItem19, Me.SpreadsheetCommandBarCheckItem20, Me.SpreadsheetCommandBarCheckItem21, Me.SpreadsheetCommandBarCheckItem22, Me.SpreadsheetCommandBarSubItem20, Me.SpreadsheetCommandBarButtonItem109, Me.SpreadsheetCommandBarButtonItem110, Me.SpreadsheetCommandBarSubItem21, Me.SpreadsheetCommandBarButtonItem111, Me.SpreadsheetCommandBarButtonItem112, Me.SpreadsheetCommandBarSubItem22, Me.FunctionsFinancialItem1, Me.FunctionsLogicalItem1, Me.FunctionsTextItem1, Me.FunctionsDateAndTimeItem1, Me.FunctionsLookupAndReferenceItem1, Me.FunctionsMathAndTrigonometryItem1, Me.SpreadsheetCommandBarSubItem23, Me.FunctionsStatisticalItem1, Me.FunctionsEngineeringItem1, Me.FunctionsInformationItem1, Me.FunctionsCompatibilityItem1, Me.FunctionsWebItem1, Me.SpreadsheetCommandBarButtonItem123, Me.SpreadsheetCommandBarButtonItem124, Me.DefinedNameListItem1, Me.SpreadsheetCommandBarButtonItem125, Me.SpreadsheetCommandBarCheckItem23, Me.SpreadsheetCommandBarSubItem24, Me.SpreadsheetCommandBarCheckItem24, Me.SpreadsheetCommandBarCheckItem25, Me.SpreadsheetCommandBarButtonItem126, Me.SpreadsheetCommandBarButtonItem127, Me.SpreadsheetCommandBarButtonItem128, Me.SpreadsheetCommandBarButtonItem129, Me.SpreadsheetCommandBarButtonItem130, Me.SpreadsheetCommandBarButtonItem131, Me.SpreadsheetCommandBarButtonItem132, Me.SpreadsheetCommandBarButtonItem133, Me.SpreadsheetCommandBarButtonItem134, Me.SpreadsheetCommandBarSubItem25, Me.SpreadsheetCommandBarButtonItem135, Me.SpreadsheetCommandBarButtonItem136, Me.SpreadsheetCommandBarButtonItem137, Me.SpreadsheetCommandBarButtonItem138, Me.SpreadsheetCommandBarButtonItem139, Me.SpreadsheetCommandBarButtonItem140, Me.SpreadsheetCommandBarButtonItem141, Me.GalleryChartLayoutItem1, Me.GalleryChartStyleItem1, Me.SpreadsheetCommandBarButtonGalleryDropDownItem11, Me.SpreadsheetCommandBarSubItem26, Me.SpreadsheetCommandBarButtonGalleryDropDownItem12, Me.SpreadsheetCommandBarButtonGalleryDropDownItem13, Me.SpreadsheetCommandBarButtonGalleryDropDownItem14, Me.SpreadsheetCommandBarButtonGalleryDropDownItem15, Me.SpreadsheetCommandBarSubItem27, Me.SpreadsheetCommandBarButtonGalleryDropDownItem16, Me.SpreadsheetCommandBarButtonGalleryDropDownItem17, Me.SpreadsheetCommandBarSubItem28, Me.SpreadsheetCommandBarButtonGalleryDropDownItem18, Me.SpreadsheetCommandBarButtonGalleryDropDownItem19, Me.SpreadsheetCommandBarButtonGalleryDropDownItem20, Me.SpreadsheetCommandBarButtonGalleryDropDownItem21, Me.SpreadsheetCommandBarButtonGalleryDropDownItem22, Me.BarStaticItem1, Me.RenameTableItem1, Me.SpreadsheetCommandBarCheckItem26, Me.SpreadsheetCommandBarCheckItem27, Me.SpreadsheetCommandBarCheckItem28, Me.SpreadsheetCommandBarCheckItem29, Me.SpreadsheetCommandBarCheckItem30, Me.SpreadsheetCommandBarCheckItem31, Me.SpreadsheetCommandBarCheckItem32, Me.GalleryTableStylesItem1})
         Me.RibbonControl1.Location = New System.Drawing.Point(0, 0)
-<<<<<<< HEAD
         Me.RibbonControl1.MaxItemId = 257
-=======
-        Me.RibbonControl1.MaxItemId = 254
->>>>>>> origin/master
         Me.RibbonControl1.Name = "RibbonControl1"
         Me.RibbonControl1.PageCategories.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageCategory() {Me.ChartToolsRibbonPageCategory1, Me.TableToolsRibbonPageCategory1, Me.PictureToolsRibbonPageCategory1, Me.DrawingToolsRibbonPageCategory1})
         Me.RibbonControl1.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.FileRibbonPage1, Me.HomeRibbonPage1, Me.InsertRibbonPage1, Me.PageLayoutRibbonPage1, Me.FormulasRibbonPage1, Me.DataRibbonPage1, Me.ReviewRibbonPage1, Me.ViewRibbonPage1})

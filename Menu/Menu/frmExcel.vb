@@ -1,9 +1,7 @@
-<<<<<<< HEAD
-﻿Public Class frmExcel
-=======
-﻿Imports System.IO
 Imports DevExpress.Spreadsheet
 Imports DevExpress.Spreadsheet.Export
+Imports System.IO
+
 
 Public Class frmExcel
 
@@ -128,5 +126,4 @@ Public Class frmExcel
             spreadsheetControl1.Document.Worksheets.ActiveWorksheet = spreadsheetControl1.Document.Worksheets(0)
         End If
     End Sub
->>>>>>> origin/master
 End Class
