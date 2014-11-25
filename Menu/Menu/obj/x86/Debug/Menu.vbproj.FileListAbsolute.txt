@@ -1,0 +1,15 @@
+c:\users\flexible\documents\visual studio 2010\Projects\Menu\Menu\bin\Debug\Menu.exe
+c:\users\flexible\documents\visual studio 2010\Projects\Menu\Menu\bin\Debug\Menu.pdb
+c:\users\flexible\documents\visual studio 2010\Projects\Menu\Menu\bin\Debug\Menu.xml
+c:\users\flexible\documents\visual studio 2010\Projects\Menu\Menu\obj\x86\Debug\Menu.frmExcel.resources
+c:\users\flexible\documents\visual studio 2010\Projects\Menu\Menu\obj\x86\Debug\Menu.frmMenu.resources
+c:\users\flexible\documents\visual studio 2010\Projects\Menu\Menu\obj\x86\Debug\Menu.frmWord.resources
+c:\users\flexible\documents\visual studio 2010\Projects\Menu\Menu\obj\x86\Debug\Menu.Resources.resources
+c:\users\flexible\documents\visual studio 2010\Projects\Menu\Menu\obj\x86\Debug\Menu.vbproj.GenerateResource.Cache
+c:\users\flexible\documents\visual studio 2010\Projects\Menu\Menu\obj\x86\Debug\Menu.exe.licenses
+c:\users\flexible\documents\visual studio 2010\Projects\Menu\Menu\obj\x86\Debug\Menu.exe
+c:\users\flexible\documents\visual studio 2010\Projects\Menu\Menu\obj\x86\Debug\Menu.xml
+c:\users\flexible\documents\visual studio 2010\Projects\Menu\Menu\obj\x86\Debug\Menu.pdb
+C:\Users\Flexible\Documents\GitHub\Menu\Menu\obj\x86\Debug\Menu.exe
+C:\Users\Flexible\Documents\GitHub\Menu\Menu\obj\x86\Debug\Menu.xml
+C:\Users\Flexible\Documents\GitHub\Menu\Menu\obj\x86\Debug\Menu.pdb
