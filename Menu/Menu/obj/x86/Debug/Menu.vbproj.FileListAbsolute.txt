@@ -13,9 +13,12 @@ c:\users\flexible\documents\visual studio 2010\Projects\Menu\Menu\obj\x86\Debug\
 C:\Users\Flexible\Documents\GitHub\Menu\Menu\obj\x86\Debug\Menu.exe
 C:\Users\Flexible\Documents\GitHub\Menu\Menu\obj\x86\Debug\Menu.xml
 C:\Users\Flexible\Documents\GitHub\Menu\Menu\obj\x86\Debug\Menu.pdb
+<<<<<<< HEAD
 C:\Projects\MenuVb\Menu\Menu\obj\x86\Debug\Menu.exe
 C:\Projects\MenuVb\Menu\Menu\obj\x86\Debug\Menu.xml
 C:\Projects\MenuVb\Menu\Menu\obj\x86\Debug\Menu.pdb
+=======
+>>>>>>> origin/master
 C:\Projects\MenuVb\Menu\Menu\bin\Debug\Menu.exe
 C:\Projects\MenuVb\Menu\Menu\bin\Debug\Menu.pdb
 C:\Projects\MenuVb\Menu\Menu\bin\Debug\Menu.xml
