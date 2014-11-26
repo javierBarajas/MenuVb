@@ -67,11 +67,17 @@ Public Class frmExcel
         Return Nothing
     End Function
 
-    Public Function ExportToDataTable() As DataTable
-        Dim worksheet As Worksheet = SpreadsheetControl1.Document.Worksheets(0)
-        Dim dataTable As DataTable = worksheet.CreateDataTable(worksheet.GetUsedRange(), True)
-        Dim exporter As DataTableExporter = worksheet.CreateDataTableExporter(worksheet.GetUsedRange(), dataTable, True)
-        exporter.Export()
+    Public Function ExportToDataTable(ByVal index As Integer) As DataTable
+        If index >= 0 AndAlso index < SpreadsheetControl1.Document.Worksheets.Count Then
+            Dim worksheet As Worksheet = SpreadsheetControl1.Document.Worksheets(index)
+            Dim dataTable As DataTable = worksheet.CreateDataTable(worksheet.GetUsedRange(), True)
+            Dim exporter As DataTableExporter = worksheet.CreateDataTableExporter(worksheet.GetUsedRange(), dataTable, True)
+            exporter.Export()
+
+            Return dataTable
+        End If
+
+        Return Nothing
     End Function
 
     Public Sub Create()
