@@ -70,8 +70,10 @@ Public Class frmExcel
     Public Function ExportToDataTable(ByVal index As Integer) As DataTable
         If index >= 0 AndAlso index < SpreadsheetControl1.Document.Worksheets.Count Then
             Dim worksheet As Worksheet = SpreadsheetControl1.Document.Worksheets(index)
-            Dim dataTable As DataTable = worksheet.CreateDataTable(worksheet.GetUsedRange(), True)
+            Dim dataTable As DataTable = worksheet.CreateDataTable(worksheet.GetUsedRange(), True, True)
             Dim exporter As DataTableExporter = worksheet.CreateDataTableExporter(worksheet.GetUsedRange(), dataTable, True)
+            'exporter.Options.DefaultCellValueToColumnTypeConverter.SkipErrorValues = True
+            AddHandler exporter.CellValueConversionError, AddressOf exporter_CellValueConversionError
             exporter.Export()
 
             dataTable.TableName = worksheet.Name
@@ -80,6 +82,12 @@ Public Class frmExcel
 
         Return Nothing
     End Function
+
+    Private Sub exporter_CellValueConversionError(ByVal sender As Object, ByVal e As CellValueConversionErrorEventArgs)
+        'MessageBox.Show("Error in cell " & e.Cell.GetReferenceA1())
+        e.DataTableValue = Nothing
+        e.Action = DataTableExporterAction.Continue
+    End Sub
 
     Public Sub Create()
         If dt IsNot Nothing Then
@@ -95,6 +103,8 @@ Public Class frmExcel
             '                table.Style = spreadsheetControl1.Document.TableStyles[BuiltInTableStyleId.TableStyleLight9];
 
             worksheet.Import(dt, _AddHeader, _FirstRowIndex, _FirstColIndex)
+            worksheet.GetUsedRange().AutoFitRows()
+            worksheet.GetUsedRange().AutoFitColumns()
         ElseIf ds IsNot Nothing AndAlso ds.Tables.Count > 0 Then
             Dim worksheetCollection As WorksheetCollection = spreadsheetControl1.Document.Worksheets
             Dim worksheet As Worksheet = Nothing
@@ -114,6 +124,8 @@ Public Class frmExcel
                 '                    table.Style = spreadsheetControl1.Document.TableStyles[BuiltInTableStyleId.TableStyleLight9];
 
                 worksheet.Import(ds.Tables(i), _AddHeader, _FirstRowIndex, _FirstColIndex)
+                worksheet.GetUsedRange().AutoFitRows()
+                worksheet.GetUsedRange().AutoFitColumns()
             Next
         ElseIf path IsNot Nothing AndAlso File.Exists(path) Then
             Dim workbook As IWorkbook = spreadsheetControl1.Document
