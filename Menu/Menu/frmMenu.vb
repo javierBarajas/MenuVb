@@ -64,7 +64,12 @@
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
-        frmWord.Show()
+        If OpenFileDialog1.ShowDialog() = System.Windows.Forms.DialogResult.OK Then
+            Dim frmExcel As New frmExcel(OpenFileDialog1.FileName)
+            frmExcel.Create() 
+            Dim frmWord As New frmWord(frmExcel.ExportToDataTable())
+            frmWord.Show()
+        End If
     End Sub
 
     Private Sub radioGroup1_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles radioGroup1.SelectedIndexChanged
