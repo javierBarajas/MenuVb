@@ -76,7 +76,7 @@ Partial Class frmMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(230, 160)
+        Me.ClientSize = New System.Drawing.Size(246, 166)
         Me.Controls.Add(Me.gcExcel)
         Me.Controls.Add(Me.Button2)
         Me.Name = "frmMenu"
