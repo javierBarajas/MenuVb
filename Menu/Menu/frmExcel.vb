@@ -74,6 +74,7 @@ Public Class frmExcel
             Dim exporter As DataTableExporter = worksheet.CreateDataTableExporter(worksheet.GetUsedRange(), dataTable, True)
             exporter.Export()
 
+            dataTable.TableName = worksheet.Name
             Return dataTable
         End If
 
