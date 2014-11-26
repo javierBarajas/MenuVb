@@ -29,3 +29,4 @@ C:\Projects\MenuVb\Menu\Menu\obj\x86\Debug\Menu.Resources.resources
 C:\Projects\MenuVb\Menu\Menu\obj\x86\Debug\Menu.vbproj.GenerateResource.Cache
 C:\Projects\MenuVb\Menu\Menu\obj\x86\Debug\Menu.exe.licenses
 C:\Projects\MenuVb\Menu\Menu\bin\Debug\Menu.exe.config
+>>>>>>> parent of b1385a1... Agregado funciones de Excel
