@@ -64,7 +64,7 @@
         If OpenFileDialog1.ShowDialog() = System.Windows.Forms.DialogResult.OK Then
             Dim frmExcel As New frmExcel(OpenFileDialog1.FileName)
             frmExcel.Create() 
-            Dim frmWord As New frmWord(frmExcel.ExportToDataTable())
+            Dim frmWord As New frmWord(frmExcel.ExportToDataTable(0))
             frmWord.Show()
         End If
     End Sub
