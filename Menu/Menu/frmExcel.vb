@@ -57,6 +57,10 @@ Public Class frmExcel
     Public Sub New(ByVal ds As DataSet)
         Initialize(Nothing, Nothing, ds)
     End Sub
+
+    Public Sub New()
+        Initialize(Nothing, Nothing, Nothing)
+    End Sub
 #End Region
 
     Public Function Worksheet(ByVal index As Integer) As Worksheet
@@ -91,8 +95,8 @@ Public Class frmExcel
 
     Public Sub Create()
         If dt IsNot Nothing Then
-            spreadsheetControl1.Document.Styles.Add("HeaderStyle")
-            Dim worksheet As Worksheet = spreadsheetControl1.Document.Worksheets(0)
+            SpreadsheetControl1.Document.Styles.Add("HeaderStyle")
+            Dim worksheet As Worksheet = SpreadsheetControl1.Document.Worksheets(0)
 
 
             'TableStyleCollection tableStyle = spreadsheetControl1.Document.TableStyles;
@@ -106,7 +110,7 @@ Public Class frmExcel
             worksheet.GetUsedRange().AutoFitRows()
             worksheet.GetUsedRange().AutoFitColumns()
         ElseIf ds IsNot Nothing AndAlso ds.Tables.Count > 0 Then
-            Dim worksheetCollection As WorksheetCollection = spreadsheetControl1.Document.Worksheets
+            Dim worksheetCollection As WorksheetCollection = SpreadsheetControl1.Document.Worksheets
             Dim worksheet As Worksheet = Nothing
 
             For i As Integer = 0 To ds.Tables.Count - 1
@@ -128,7 +132,7 @@ Public Class frmExcel
                 worksheet.GetUsedRange().AutoFitColumns()
             Next
         ElseIf path IsNot Nothing AndAlso File.Exists(path) Then
-            Dim workbook As IWorkbook = spreadsheetControl1.Document
+            Dim workbook As IWorkbook = SpreadsheetControl1.Document
 
             Using stream As New FileStream(path, FileMode.Open)
                 workbook.LoadDocument(stream, DocumentFormat.OpenXml)
@@ -140,8 +144,8 @@ Public Class frmExcel
             End Using
         End If
 
-        If spreadsheetControl1.Document.Worksheets.Count > 0 Then
-            spreadsheetControl1.Document.Worksheets.ActiveWorksheet = spreadsheetControl1.Document.Worksheets(0)
+        If SpreadsheetControl1.Document.Worksheets.Count > 0 Then
+            SpreadsheetControl1.Document.Worksheets.ActiveWorksheet = SpreadsheetControl1.Document.Worksheets(0)
         End If
     End Sub
 End Class

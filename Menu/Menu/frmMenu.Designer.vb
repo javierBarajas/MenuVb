@@ -35,7 +35,7 @@ Partial Class frmMenu
         'btnExcel
         '
         Me.btnExcel.Enabled = False
-        Me.btnExcel.Location = New System.Drawing.Point(120, 43)
+        Me.btnExcel.Location = New System.Drawing.Point(110, 53)
         Me.btnExcel.Name = "btnExcel"
         Me.btnExcel.Size = New System.Drawing.Size(75, 23)
         Me.btnExcel.TabIndex = 0
@@ -43,7 +43,7 @@ Partial Class frmMenu
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(12, 125)
+        Me.Button2.Location = New System.Drawing.Point(12, 141)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 1
@@ -56,7 +56,7 @@ Partial Class frmMenu
         Me.gcExcel.Controls.Add(Me.btnExcel)
         Me.gcExcel.Location = New System.Drawing.Point(12, 12)
         Me.gcExcel.Name = "gcExcel"
-        Me.gcExcel.Size = New System.Drawing.Size(200, 100)
+        Me.gcExcel.Size = New System.Drawing.Size(192, 123)
         Me.gcExcel.TabIndex = 5
         Me.gcExcel.Text = "Excel"
         '
@@ -64,8 +64,8 @@ Partial Class frmMenu
         '
         Me.radioGroup1.Location = New System.Drawing.Point(6, 25)
         Me.radioGroup1.Name = "radioGroup1"
-        Me.radioGroup1.Properties.Items.AddRange(New DevExpress.XtraEditors.Controls.RadioGroupItem() {New DevExpress.XtraEditors.Controls.RadioGroupItem(0, "DataTable"), New DevExpress.XtraEditors.Controls.RadioGroupItem(1, "DataSet"), New DevExpress.XtraEditors.Controls.RadioGroupItem(2, "Open XLS")})
-        Me.radioGroup1.Size = New System.Drawing.Size(96, 55)
+        Me.radioGroup1.Properties.Items.AddRange(New DevExpress.XtraEditors.Controls.RadioGroupItem() {New DevExpress.XtraEditors.Controls.RadioGroupItem(0, "DataTable"), New DevExpress.XtraEditors.Controls.RadioGroupItem(1, "DataSet"), New DevExpress.XtraEditors.Controls.RadioGroupItem(2, "Open XLS"), New DevExpress.XtraEditors.Controls.RadioGroupItem(3, "ShipAllocations")})
+        Me.radioGroup1.Size = New System.Drawing.Size(98, 82)
         Me.radioGroup1.TabIndex = 1
         '
         'OpenFileDialog1
@@ -76,7 +76,7 @@ Partial Class frmMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(230, 160)
+        Me.ClientSize = New System.Drawing.Size(227, 174)
         Me.Controls.Add(Me.gcExcel)
         Me.Controls.Add(Me.Button2)
         Me.Name = "frmMenu"
