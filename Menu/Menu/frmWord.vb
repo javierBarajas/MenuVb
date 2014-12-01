@@ -19,7 +19,7 @@ Public Class frmWord
         DataNavigator1.DataSource = dt
         RichEditControl1.Options.MailMerge.DataSource = dt
         RichEditControl1.Options.MailMerge.ViewMergedData = True
-        RichEditControl1.LoadDocument("Pantilla.rtf")
+        'RichEditControl1.LoadDocument("Pantilla.rtf")
 
     End Sub
 #End Region

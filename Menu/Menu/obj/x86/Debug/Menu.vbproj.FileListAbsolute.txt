@@ -25,3 +25,4 @@ C:\Projects\MenuVb\Menu\Menu\obj\x86\Debug\Menu.exe.licenses
 C:\Projects\MenuVb\Menu\Menu\obj\x86\Debug\Menu.exe
 C:\Projects\MenuVb\Menu\Menu\obj\x86\Debug\Menu.xml
 C:\Projects\MenuVb\Menu\Menu\obj\x86\Debug\Menu.pdb
+C:\Projects\MenuVb\Menu\Menu\obj\x86\Debug\Menu.frmFiltros.resources
