@@ -142,6 +142,15 @@ Public Class frmMenu
             sheet.GetUsedRange().AutoFitColumns()
 
             frmExcel.Show()
+        ElseIf radioGroup1.SelectedIndex = 3 Then
+            Dim frmExcel As New frmExcel()
+            frmExcel.AddHeader = True
+            frmExcel.FirstColIndex = 0
+            frmExcel.FirstRowIndex = 0
+            frmExcel.Create()
+
+            Dim sheet As Worksheet = frmExcel.Worksheet(0)
+            Dim rowIndex As Integer = 0
         End If
     End Sub
 
