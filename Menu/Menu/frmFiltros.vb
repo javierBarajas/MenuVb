@@ -45,8 +45,7 @@
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         If (cbCity.SelectedIndex = -1 And cbSt.SelectedIndex = -1 And cbZipCode.SelectedIndex = -1 And cbCountry.SelectedIndex = -1) Then
-            Dim frmWord1 As New frmWord(dt)
-            frmWord1.Show()
+            linq2 = dt
         End If
 
         If (cbCity.SelectedIndex >= 0 Or cbSt.SelectedIndex >= 0 Or cbZipCode.SelectedIndex >= 0 Or cbCountry.SelectedIndex >= 0) Then
