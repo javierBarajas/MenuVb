@@ -63,9 +63,11 @@ Public Class frmExcel
     End Sub
 #End Region
 
-    Public Function Worksheet(ByVal index As Integer) As Worksheet
+    Public Function Worksheet(ByVal index As Integer, Optional ByVal AddNew As Boolean = False) As Worksheet
         If index >= 0 AndAlso index < SpreadsheetControl1.Document.Worksheets.Count Then
             Return SpreadsheetControl1.Document.Worksheets(index)
+        ElseIf AddNew Then
+            Return SpreadsheetControl1.Document.Worksheets.Add()
         End If
 
         Return Nothing
