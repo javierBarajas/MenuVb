@@ -158,8 +158,8 @@ Public Class frmMenu
         If OpenFileDialog1.ShowDialog() = System.Windows.Forms.DialogResult.OK Then
             Dim frmExcel As New frmExcel(OpenFileDialog1.FileName)
             frmExcel.Create()
-            Dim frmFiltros As New frmFiltros(frmExcel.ExportToDataTable(0))
-            frmFiltros.Show()
+            Dim frmWord As New frmWord(frmExcel.ExportToDataTable(0))
+            frmWord.Show()
         End If
     End Sub
 

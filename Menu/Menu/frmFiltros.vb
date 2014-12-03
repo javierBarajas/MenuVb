@@ -1,23 +1,23 @@
 ﻿Public Class frmFiltros
 #Region "Variables"
-    Private dt As DataTable = Nothing
+    Private dt As DataTable
     Private linq
-    Private linq2 As DataTable
+    Public linq2 As DataTable
 #End Region
 
 #Region "Constructor"
-    Private Sub Initialize(ByVal dt As DataTable)
+    Private Sub Initialize(ByRef dt As DataTable)
         InitializeComponent()
         Me.dt = dt
     End Sub
 
-    Public Sub New(ByVal dt As DataTable)
+    Public Sub New(ByRef dt As DataTable)
         Initialize(dt)
     End Sub
 #End Region
 
     Private Sub frmFiltros_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-
+       
         linq = (From row In dt.AsEnumerable()
                 Group row By City = row.Field(Of String)("City") Into CityGroup = Group
                 Select City).ToList()
@@ -119,8 +119,7 @@
                 linq2 = dt3
             End Try
             valor = 0
-            Dim frmWord As New frmWord(linq2)
-            frmWord.Show()
+            Me.Close()
         End If
     End Sub
 End Class

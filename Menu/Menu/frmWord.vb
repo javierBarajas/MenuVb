@@ -33,8 +33,14 @@ Public Class frmWord
     End Sub
 
     Private Sub BarButtonItem1_ItemClick(ByVal sender As System.Object, ByVal e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem1.ItemClick
+        Dim frmFiltros As New frmFiltros(dt)
+        frmFiltros.ShowDialog(Me)
 
-        Dim count As Integer = dt.Rows.Count
+        DataNavigator1.DataSource = frmFiltros.linq2
+        RichEditControl1.Options.MailMerge.DataSource = frmFiltros.linq2
+        RichEditControl1.Options.MailMerge.ViewMergedData = True
+
+        Dim count As Integer = frmFiltros.linq2.Rows.Count
 
         Dim saveFileDialog1 As New SaveFileDialog()
         saveFileDialog1.Filter = "PDF files (*.pdf)|*.pdf|All files (*.*)|*.*"
@@ -57,12 +63,19 @@ Public Class frmWord
                 Next i
             End Using
         End If
+        DataNavigator1.DataSource = dt
+        RichEditControl1.Options.MailMerge.DataSource = dt
+        RichEditControl1.Options.MailMerge.ViewMergedData = True
     End Sub
     Private Sub BarButtonItem4_ItemClick(ByVal sender As System.Object, ByVal e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem4.ItemClick
+
+        Dim frmFiltros As New frmFiltros(dt)
+        frmFiltros.ShowDialog(Me)
+
         Dim myMergeOptions As MailMergeOptions = RichEditControl1.Document.CreateMailMergeOptions()
-        myMergeOptions.DataSource = dt
+        myMergeOptions.DataSource = frmFiltros.linq2
         myMergeOptions.FirstRecordIndex = 0
-        myMergeOptions.LastRecordIndex = dt.Rows.Count
+        myMergeOptions.LastRecordIndex = frmFiltros.linq2.Rows.Count
         myMergeOptions.MergeMode = MergeMode.NewSection
 
         Dim fileDialog As New SaveFileDialog()
