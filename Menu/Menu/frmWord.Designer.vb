@@ -275,26 +275,8 @@ Partial Class frmWord
         Me.BarButtonItem1 = New DevExpress.XtraBars.BarButtonItem()
         Me.BarButtonItem4 = New DevExpress.XtraBars.BarButtonItem()
         Me.BarDockingMenuItem1 = New DevExpress.XtraBars.BarDockingMenuItem()
-        Me.HeaderFooterToolsRibbonPageCategory1 = New DevExpress.XtraRichEdit.UI.HeaderFooterToolsRibbonPageCategory()
-        Me.HeaderFooterToolsDesignRibbonPage1 = New DevExpress.XtraRichEdit.UI.HeaderFooterToolsDesignRibbonPage()
-        Me.HeaderFooterToolsDesignNavigationRibbonPageGroup1 = New DevExpress.XtraRichEdit.UI.HeaderFooterToolsDesignNavigationRibbonPageGroup()
-        Me.HeaderFooterToolsDesignOptionsRibbonPageGroup1 = New DevExpress.XtraRichEdit.UI.HeaderFooterToolsDesignOptionsRibbonPageGroup()
-        Me.HeaderFooterToolsDesignCloseRibbonPageGroup1 = New DevExpress.XtraRichEdit.UI.HeaderFooterToolsDesignCloseRibbonPageGroup()
-        Me.TableToolsRibbonPageCategory1 = New DevExpress.XtraRichEdit.UI.TableToolsRibbonPageCategory()
-        Me.TableDesignRibbonPage1 = New DevExpress.XtraRichEdit.UI.TableDesignRibbonPage()
-        Me.TableStyleOptionsRibbonPageGroup1 = New DevExpress.XtraRichEdit.UI.TableStyleOptionsRibbonPageGroup()
-        Me.TableStylesRibbonPageGroup1 = New DevExpress.XtraRichEdit.UI.TableStylesRibbonPageGroup()
-        Me.TableDrawBordersRibbonPageGroup1 = New DevExpress.XtraRichEdit.UI.TableDrawBordersRibbonPageGroup()
-        Me.TableLayoutRibbonPage1 = New DevExpress.XtraRichEdit.UI.TableLayoutRibbonPage()
-        Me.TableTableRibbonPageGroup1 = New DevExpress.XtraRichEdit.UI.TableTableRibbonPageGroup()
-        Me.TableRowsAndColumnsRibbonPageGroup1 = New DevExpress.XtraRichEdit.UI.TableRowsAndColumnsRibbonPageGroup()
-        Me.TableMergeRibbonPageGroup1 = New DevExpress.XtraRichEdit.UI.TableMergeRibbonPageGroup()
-        Me.TableCellSizeRibbonPageGroup1 = New DevExpress.XtraRichEdit.UI.TableCellSizeRibbonPageGroup()
-        Me.TableAlignmentRibbonPageGroup1 = New DevExpress.XtraRichEdit.UI.TableAlignmentRibbonPageGroup()
-        Me.FloatingPictureToolsRibbonPageCategory1 = New DevExpress.XtraRichEdit.UI.FloatingPictureToolsRibbonPageCategory()
-        Me.FloatingPictureToolsFormatPage1 = New DevExpress.XtraRichEdit.UI.FloatingPictureToolsFormatPage()
-        Me.FloatingPictureToolsShapeStylesPageGroup1 = New DevExpress.XtraRichEdit.UI.FloatingPictureToolsShapeStylesPageGroup()
-        Me.FloatingPictureToolsArrangePageGroup1 = New DevExpress.XtraRichEdit.UI.FloatingPictureToolsArrangePageGroup()
+        Me.BarButtonItem2 = New DevExpress.XtraBars.BarButtonItem()
+        Me.BarButtonItem3 = New DevExpress.XtraBars.BarButtonItem()
         Me.FileRibbonPage1 = New DevExpress.XtraRichEdit.UI.FileRibbonPage()
         Me.CommonRibbonPageGroup1 = New DevExpress.XtraRichEdit.UI.CommonRibbonPageGroup()
         Me.HomeRibbonPage1 = New DevExpress.XtraRichEdit.UI.HomeRibbonPage()
@@ -318,20 +300,13 @@ Partial Class frmWord
         Me.CaptionsRibbonPageGroup1 = New DevExpress.XtraRichEdit.UI.CaptionsRibbonPageGroup()
         Me.MailingsRibbonPage1 = New DevExpress.XtraRichEdit.UI.MailingsRibbonPage()
         Me.MailMergeRibbonPageGroup1 = New DevExpress.XtraRichEdit.UI.MailMergeRibbonPageGroup()
-        Me.ReviewRibbonPage1 = New DevExpress.XtraRichEdit.UI.ReviewRibbonPage()
-        Me.DocumentProofingRibbonPageGroup1 = New DevExpress.XtraRichEdit.UI.DocumentProofingRibbonPageGroup()
-        Me.DocumentProtectionRibbonPageGroup1 = New DevExpress.XtraRichEdit.UI.DocumentProtectionRibbonPageGroup()
-        Me.DocumentCommentRibbonPageGroup1 = New DevExpress.XtraRichEdit.UI.DocumentCommentRibbonPageGroup()
-        Me.ViewRibbonPage1 = New DevExpress.XtraRichEdit.UI.ViewRibbonPage()
-        Me.DocumentViewsRibbonPageGroup1 = New DevExpress.XtraRichEdit.UI.DocumentViewsRibbonPageGroup()
-        Me.ShowRibbonPageGroup1 = New DevExpress.XtraRichEdit.UI.ShowRibbonPageGroup()
-        Me.ZoomRibbonPageGroup1 = New DevExpress.XtraRichEdit.UI.ZoomRibbonPageGroup()
         Me.RibbonPage1 = New DevExpress.XtraBars.Ribbon.RibbonPage()
         Me.RibbonPageGroup1 = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.RibbonPageGroup2 = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.RichEditBarController1 = New DevExpress.XtraRichEdit.UI.RichEditBarController()
         Me.DataNavigator1 = New DevExpress.XtraEditors.DataNavigator()
         Me.DockManager1 = New DevExpress.XtraBars.Docking.DockManager(Me.components)
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         CType(Me.RibbonControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemFontEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemRichEditFontSizeEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -362,14 +337,13 @@ Partial Class frmWord
         'RibbonControl1
         '
         Me.RibbonControl1.ExpandCollapseItem.Id = 0
-        Me.RibbonControl1.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.RibbonControl1.ExpandCollapseItem, Me.UndoItem1, Me.RedoItem1, Me.FileNewItem1, Me.FileOpenItem1, Me.FileSaveItem1, Me.FileSaveAsItem1, Me.QuickPrintItem1, Me.PrintItem1, Me.PrintPreviewItem1, Me.PasteItem1, Me.CutItem1, Me.CopyItem1, Me.PasteSpecialItem1, Me.BarButtonGroup1, Me.ChangeFontNameItem1, Me.ChangeFontSizeItem1, Me.FontSizeIncreaseItem1, Me.FontSizeDecreaseItem1, Me.BarButtonGroup2, Me.ToggleFontBoldItem1, Me.ToggleFontItalicItem1, Me.ToggleFontUnderlineItem1, Me.ToggleFontDoubleUnderlineItem1, Me.ToggleFontStrikeoutItem1, Me.ToggleFontDoubleStrikeoutItem1, Me.ToggleFontSuperscriptItem1, Me.ToggleFontSubscriptItem1, Me.BarButtonGroup3, Me.ChangeFontColorItem1, Me.ChangeFontBackColorItem1, Me.ChangeTextCaseItem1, Me.MakeTextUpperCaseItem1, Me.MakeTextLowerCaseItem1, Me.CapitalizeEachWordCaseItem1, Me.ToggleTextCaseItem1, Me.ClearFormattingItem1, Me.BarButtonGroup4, Me.ToggleBulletedListItem1, Me.ToggleNumberingListItem1, Me.ToggleMultiLevelListItem1, Me.BarButtonGroup5, Me.DecreaseIndentItem1, Me.IncreaseIndentItem1, Me.BarButtonGroup6, Me.ToggleParagraphAlignmentLeftItem1, Me.ToggleParagraphAlignmentCenterItem1, Me.ToggleParagraphAlignmentRightItem1, Me.ToggleParagraphAlignmentJustifyItem1, Me.ToggleShowWhitespaceItem1, Me.BarButtonGroup7, Me.ChangeParagraphLineSpacingItem1, Me.SetSingleParagraphSpacingItem1, Me.SetSesquialteralParagraphSpacingItem1, Me.SetDoubleParagraphSpacingItem1, Me.ShowLineSpacingFormItem1, Me.AddSpacingBeforeParagraphItem1, Me.RemoveSpacingBeforeParagraphItem1, Me.AddSpacingAfterParagraphItem1, Me.RemoveSpacingAfterParagraphItem1, Me.ChangeParagraphBackColorItem1, Me.GalleryChangeStyleItem1, Me.FindItem1, Me.ReplaceItem1, Me.InsertPageBreakItem21, Me.InsertTableItem1, Me.InsertPictureItem1, Me.InsertFloatingPictureItem1, Me.InsertBookmarkItem1, Me.InsertHyperlinkItem1, Me.EditPageHeaderItem1, Me.EditPageFooterItem1, Me.InsertPageNumberItem1, Me.InsertPageCountItem1, Me.InsertTextBoxItem1, Me.InsertSymbolItem1, Me.ChangeSectionPageMarginsItem1, Me.SetNormalSectionPageMarginsItem1, Me.SetNarrowSectionPageMarginsItem1, Me.SetModerateSectionPageMarginsItem1, Me.SetWideSectionPageMarginsItem1, Me.ShowPageMarginsSetupFormItem1, Me.ChangeSectionPageOrientationItem1, Me.SetPortraitPageOrientationItem1, Me.SetLandscapePageOrientationItem1, Me.ChangeSectionPaperKindItem1, Me.ChangeSectionColumnsItem1, Me.SetSectionOneColumnItem1, Me.SetSectionTwoColumnsItem1, Me.SetSectionThreeColumnsItem1, Me.ShowColumnsSetupFormItem1, Me.InsertBreakItem1, Me.InsertPageBreakItem1, Me.InsertColumnBreakItem1, Me.InsertSectionBreakNextPageItem1, Me.InsertSectionBreakEvenPageItem1, Me.InsertSectionBreakOddPageItem1, Me.ChangeSectionLineNumberingItem1, Me.SetSectionLineNumberingNoneItem1, Me.SetSectionLineNumberingContinuousItem1, Me.SetSectionLineNumberingRestartNewPageItem1, Me.SetSectionLineNumberingRestartNewSectionItem1, Me.ToggleParagraphSuppressLineNumbersItem1, Me.ShowLineNumberingFormItem1, Me.ChangePageColorItem1, Me.InsertTableOfContentsItem1, Me.UpdateTableOfContentsItem1, Me.AddParagraphsToTableOfContentItem1, Me.SetParagraphHeadingLevelItem1, Me.SetParagraphHeadingLevelItem2, Me.SetParagraphHeadingLevelItem3, Me.SetParagraphHeadingLevelItem4, Me.SetParagraphHeadingLevelItem5, Me.SetParagraphHeadingLevelItem6, Me.SetParagraphHeadingLevelItem7, Me.SetParagraphHeadingLevelItem8, Me.SetParagraphHeadingLevelItem9, Me.SetParagraphHeadingLevelItem10, Me.InsertCaptionPlaceholderItem1, Me.InsertFiguresCaptionItems1, Me.InsertTablesCaptionItems1, Me.InsertEquationsCaptionItems1, Me.InsertTableOfFiguresPlaceholderItem1, Me.InsertTableOfFiguresItems1, Me.InsertTableOfTablesItems1, Me.InsertTableOfEquationsItems1, Me.UpdateTableOfFiguresItem1, Me.InsertMergeFieldItem1, Me.ShowAllFieldCodesItem1, Me.ShowAllFieldResultsItem1, Me.ToggleViewMergedDataItem1, Me.CheckSpellingItem1, Me.ChangeLanguageItem1, Me.ProtectDocumentItem1, Me.ChangeRangeEditingPermissionsItem1, Me.UnprotectDocumentItem1, Me.ChangeCommentItem1, Me.ReviewersItem1, Me.ReviewingPaneItem1, Me.SwitchToSimpleViewItem1, Me.SwitchToDraftViewItem1, Me.SwitchToPrintLayoutViewItem1, Me.ToggleShowHorizontalRulerItem1, Me.ToggleShowVerticalRulerItem1, Me.ZoomOutItem1, Me.ZoomInItem1, Me.GoToPageHeaderItem1, Me.GoToPageFooterItem1, Me.GoToNextHeaderFooterItem1, Me.GoToPreviousHeaderFooterItem1, Me.ToggleLinkToPreviousItem1, Me.ToggleDifferentFirstPageItem1, Me.ToggleDifferentOddAndEvenPagesItem1, Me.ClosePageHeaderFooterItem1, Me.ToggleFirstRowItem1, Me.ToggleLastRowItem1, Me.ToggleBandedRowsItem1, Me.ToggleFirstColumnItem1, Me.ToggleLastColumnItem1, Me.ToggleBandedColumnsItem1, Me.GalleryChangeTableStyleItem1, Me.ChangeTableBorderLineStyleItem1, Me.ChangeTableBorderLineWeightItem1, Me.ChangeTableBorderColorItem1, Me.ChangeTableBordersItem1, Me.ToggleTableCellsBottomBorderItem1, Me.ToggleTableCellsTopBorderItem1, Me.ToggleTableCellsLeftBorderItem1, Me.ToggleTableCellsRightBorderItem1, Me.ResetTableCellsAllBordersItem1, Me.ToggleTableCellsAllBordersItem1, Me.ToggleTableCellsOutsideBorderItem1, Me.ToggleTableCellsInsideBorderItem1, Me.ToggleTableCellsInsideHorizontalBorderItem1, Me.ToggleTableCellsInsideVerticalBorderItem1, Me.ToggleShowTableGridLinesItem1, Me.ChangeTableCellsShadingItem1, Me.SelectTableElementsItem1, Me.SelectTableCellItem1, Me.SelectTableColumnItem1, Me.SelectTableRowItem1, Me.SelectTableItem1, Me.ShowTablePropertiesFormItem1, Me.DeleteTableElementsItem1, Me.ShowDeleteTableCellsFormItem1, Me.DeleteTableColumnsItem1, Me.DeleteTableRowsItem1, Me.DeleteTableItem1, Me.InsertTableRowAboveItem1, Me.InsertTableRowBelowItem1, Me.InsertTableColumnToLeftItem1, Me.InsertTableColumnToRightItem1, Me.MergeTableCellsItem1, Me.ShowSplitTableCellsForm1, Me.SplitTableItem1, Me.ToggleTableAutoFitItem1, Me.ToggleTableAutoFitContentsItem1, Me.ToggleTableAutoFitWindowItem1, Me.ToggleTableFixedColumnWidthItem1, Me.ToggleTableCellsTopLeftAlignmentItem1, Me.ToggleTableCellsMiddleLeftAlignmentItem1, Me.ToggleTableCellsBottomLeftAlignmentItem1, Me.ToggleTableCellsTopCenterAlignmentItem1, Me.ToggleTableCellsMiddleCenterAlignmentItem1, Me.ToggleTableCellsBottomCenterAlignmentItem1, Me.ToggleTableCellsTopRightAlignmentItem1, Me.ToggleTableCellsMiddleRightAlignmentItem1, Me.ToggleTableCellsBottomRightAlignmentItem1, Me.ShowTableOptionsFormItem1, Me.ChangeFloatingObjectFillColorItem1, Me.ChangeFloatingObjectOutlineColorItem1, Me.ChangeFloatingObjectOutlineWeightItem1, Me.ChangeFloatingObjectTextWrapTypeItem1, Me.SetFloatingObjectSquareTextWrapTypeItem1, Me.SetFloatingObjectTightTextWrapTypeItem1, Me.SetFloatingObjectThroughTextWrapTypeItem1, Me.SetFloatingObjectTopAndBottomTextWrapTypeItem1, Me.SetFloatingObjectBehindTextWrapTypeItem1, Me.SetFloatingObjectInFrontOfTextWrapTypeItem1, Me.ChangeFloatingObjectAlignmentItem1, Me.SetFloatingObjectTopLeftAlignmentItem1, Me.SetFloatingObjectTopCenterAlignmentItem1, Me.SetFloatingObjectTopRightAlignmentItem1, Me.SetFloatingObjectMiddleLeftAlignmentItem1, Me.SetFloatingObjectMiddleCenterAlignmentItem1, Me.SetFloatingObjectMiddleRightAlignmentItem1, Me.SetFloatingObjectBottomLeftAlignmentItem1, Me.SetFloatingObjectBottomCenterAlignmentItem1, Me.SetFloatingObjectBottomRightAlignmentItem1, Me.FloatingObjectBringForwardSubItem1, Me.FloatingObjectBringForwardItem1, Me.FloatingObjectBringToFrontItem1, Me.FloatingObjectBringInFrontOfTextItem1, Me.FloatingObjectSendBackwardSubItem1, Me.FloatingObjectSendBackwardItem1, Me.FloatingObjectSendToBackItem1, Me.FloatingObjectSendBehindTextItem1, Me.BarButtonItem1, Me.BarButtonItem4, Me.BarDockingMenuItem1})
+        Me.RibbonControl1.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.RibbonControl1.ExpandCollapseItem, Me.UndoItem1, Me.RedoItem1, Me.FileNewItem1, Me.FileOpenItem1, Me.FileSaveItem1, Me.FileSaveAsItem1, Me.QuickPrintItem1, Me.PrintItem1, Me.PrintPreviewItem1, Me.PasteItem1, Me.CutItem1, Me.CopyItem1, Me.PasteSpecialItem1, Me.BarButtonGroup1, Me.ChangeFontNameItem1, Me.ChangeFontSizeItem1, Me.FontSizeIncreaseItem1, Me.FontSizeDecreaseItem1, Me.BarButtonGroup2, Me.ToggleFontBoldItem1, Me.ToggleFontItalicItem1, Me.ToggleFontUnderlineItem1, Me.ToggleFontDoubleUnderlineItem1, Me.ToggleFontStrikeoutItem1, Me.ToggleFontDoubleStrikeoutItem1, Me.ToggleFontSuperscriptItem1, Me.ToggleFontSubscriptItem1, Me.BarButtonGroup3, Me.ChangeFontColorItem1, Me.ChangeFontBackColorItem1, Me.ChangeTextCaseItem1, Me.MakeTextUpperCaseItem1, Me.MakeTextLowerCaseItem1, Me.CapitalizeEachWordCaseItem1, Me.ToggleTextCaseItem1, Me.ClearFormattingItem1, Me.BarButtonGroup4, Me.ToggleBulletedListItem1, Me.ToggleNumberingListItem1, Me.ToggleMultiLevelListItem1, Me.BarButtonGroup5, Me.DecreaseIndentItem1, Me.IncreaseIndentItem1, Me.BarButtonGroup6, Me.ToggleParagraphAlignmentLeftItem1, Me.ToggleParagraphAlignmentCenterItem1, Me.ToggleParagraphAlignmentRightItem1, Me.ToggleParagraphAlignmentJustifyItem1, Me.ToggleShowWhitespaceItem1, Me.BarButtonGroup7, Me.ChangeParagraphLineSpacingItem1, Me.SetSingleParagraphSpacingItem1, Me.SetSesquialteralParagraphSpacingItem1, Me.SetDoubleParagraphSpacingItem1, Me.ShowLineSpacingFormItem1, Me.AddSpacingBeforeParagraphItem1, Me.RemoveSpacingBeforeParagraphItem1, Me.AddSpacingAfterParagraphItem1, Me.RemoveSpacingAfterParagraphItem1, Me.ChangeParagraphBackColorItem1, Me.GalleryChangeStyleItem1, Me.FindItem1, Me.ReplaceItem1, Me.InsertPageBreakItem21, Me.InsertTableItem1, Me.InsertPictureItem1, Me.InsertFloatingPictureItem1, Me.InsertBookmarkItem1, Me.InsertHyperlinkItem1, Me.EditPageHeaderItem1, Me.EditPageFooterItem1, Me.InsertPageNumberItem1, Me.InsertPageCountItem1, Me.InsertTextBoxItem1, Me.InsertSymbolItem1, Me.ChangeSectionPageMarginsItem1, Me.SetNormalSectionPageMarginsItem1, Me.SetNarrowSectionPageMarginsItem1, Me.SetModerateSectionPageMarginsItem1, Me.SetWideSectionPageMarginsItem1, Me.ShowPageMarginsSetupFormItem1, Me.ChangeSectionPageOrientationItem1, Me.SetPortraitPageOrientationItem1, Me.SetLandscapePageOrientationItem1, Me.ChangeSectionPaperKindItem1, Me.ChangeSectionColumnsItem1, Me.SetSectionOneColumnItem1, Me.SetSectionTwoColumnsItem1, Me.SetSectionThreeColumnsItem1, Me.ShowColumnsSetupFormItem1, Me.InsertBreakItem1, Me.InsertPageBreakItem1, Me.InsertColumnBreakItem1, Me.InsertSectionBreakNextPageItem1, Me.InsertSectionBreakEvenPageItem1, Me.InsertSectionBreakOddPageItem1, Me.ChangeSectionLineNumberingItem1, Me.SetSectionLineNumberingNoneItem1, Me.SetSectionLineNumberingContinuousItem1, Me.SetSectionLineNumberingRestartNewPageItem1, Me.SetSectionLineNumberingRestartNewSectionItem1, Me.ToggleParagraphSuppressLineNumbersItem1, Me.ShowLineNumberingFormItem1, Me.ChangePageColorItem1, Me.InsertTableOfContentsItem1, Me.UpdateTableOfContentsItem1, Me.AddParagraphsToTableOfContentItem1, Me.SetParagraphHeadingLevelItem1, Me.SetParagraphHeadingLevelItem2, Me.SetParagraphHeadingLevelItem3, Me.SetParagraphHeadingLevelItem4, Me.SetParagraphHeadingLevelItem5, Me.SetParagraphHeadingLevelItem6, Me.SetParagraphHeadingLevelItem7, Me.SetParagraphHeadingLevelItem8, Me.SetParagraphHeadingLevelItem9, Me.SetParagraphHeadingLevelItem10, Me.InsertCaptionPlaceholderItem1, Me.InsertFiguresCaptionItems1, Me.InsertTablesCaptionItems1, Me.InsertEquationsCaptionItems1, Me.InsertTableOfFiguresPlaceholderItem1, Me.InsertTableOfFiguresItems1, Me.InsertTableOfTablesItems1, Me.InsertTableOfEquationsItems1, Me.UpdateTableOfFiguresItem1, Me.InsertMergeFieldItem1, Me.ShowAllFieldCodesItem1, Me.ShowAllFieldResultsItem1, Me.ToggleViewMergedDataItem1, Me.CheckSpellingItem1, Me.ChangeLanguageItem1, Me.ProtectDocumentItem1, Me.ChangeRangeEditingPermissionsItem1, Me.UnprotectDocumentItem1, Me.ChangeCommentItem1, Me.ReviewersItem1, Me.ReviewingPaneItem1, Me.SwitchToSimpleViewItem1, Me.SwitchToDraftViewItem1, Me.SwitchToPrintLayoutViewItem1, Me.ToggleShowHorizontalRulerItem1, Me.ToggleShowVerticalRulerItem1, Me.ZoomOutItem1, Me.ZoomInItem1, Me.GoToPageHeaderItem1, Me.GoToPageFooterItem1, Me.GoToNextHeaderFooterItem1, Me.GoToPreviousHeaderFooterItem1, Me.ToggleLinkToPreviousItem1, Me.ToggleDifferentFirstPageItem1, Me.ToggleDifferentOddAndEvenPagesItem1, Me.ClosePageHeaderFooterItem1, Me.ToggleFirstRowItem1, Me.ToggleLastRowItem1, Me.ToggleBandedRowsItem1, Me.ToggleFirstColumnItem1, Me.ToggleLastColumnItem1, Me.ToggleBandedColumnsItem1, Me.GalleryChangeTableStyleItem1, Me.ChangeTableBorderLineStyleItem1, Me.ChangeTableBorderLineWeightItem1, Me.ChangeTableBorderColorItem1, Me.ChangeTableBordersItem1, Me.ToggleTableCellsBottomBorderItem1, Me.ToggleTableCellsTopBorderItem1, Me.ToggleTableCellsLeftBorderItem1, Me.ToggleTableCellsRightBorderItem1, Me.ResetTableCellsAllBordersItem1, Me.ToggleTableCellsAllBordersItem1, Me.ToggleTableCellsOutsideBorderItem1, Me.ToggleTableCellsInsideBorderItem1, Me.ToggleTableCellsInsideHorizontalBorderItem1, Me.ToggleTableCellsInsideVerticalBorderItem1, Me.ToggleShowTableGridLinesItem1, Me.ChangeTableCellsShadingItem1, Me.SelectTableElementsItem1, Me.SelectTableCellItem1, Me.SelectTableColumnItem1, Me.SelectTableRowItem1, Me.SelectTableItem1, Me.ShowTablePropertiesFormItem1, Me.DeleteTableElementsItem1, Me.ShowDeleteTableCellsFormItem1, Me.DeleteTableColumnsItem1, Me.DeleteTableRowsItem1, Me.DeleteTableItem1, Me.InsertTableRowAboveItem1, Me.InsertTableRowBelowItem1, Me.InsertTableColumnToLeftItem1, Me.InsertTableColumnToRightItem1, Me.MergeTableCellsItem1, Me.ShowSplitTableCellsForm1, Me.SplitTableItem1, Me.ToggleTableAutoFitItem1, Me.ToggleTableAutoFitContentsItem1, Me.ToggleTableAutoFitWindowItem1, Me.ToggleTableFixedColumnWidthItem1, Me.ToggleTableCellsTopLeftAlignmentItem1, Me.ToggleTableCellsMiddleLeftAlignmentItem1, Me.ToggleTableCellsBottomLeftAlignmentItem1, Me.ToggleTableCellsTopCenterAlignmentItem1, Me.ToggleTableCellsMiddleCenterAlignmentItem1, Me.ToggleTableCellsBottomCenterAlignmentItem1, Me.ToggleTableCellsTopRightAlignmentItem1, Me.ToggleTableCellsMiddleRightAlignmentItem1, Me.ToggleTableCellsBottomRightAlignmentItem1, Me.ShowTableOptionsFormItem1, Me.ChangeFloatingObjectFillColorItem1, Me.ChangeFloatingObjectOutlineColorItem1, Me.ChangeFloatingObjectOutlineWeightItem1, Me.ChangeFloatingObjectTextWrapTypeItem1, Me.SetFloatingObjectSquareTextWrapTypeItem1, Me.SetFloatingObjectTightTextWrapTypeItem1, Me.SetFloatingObjectThroughTextWrapTypeItem1, Me.SetFloatingObjectTopAndBottomTextWrapTypeItem1, Me.SetFloatingObjectBehindTextWrapTypeItem1, Me.SetFloatingObjectInFrontOfTextWrapTypeItem1, Me.ChangeFloatingObjectAlignmentItem1, Me.SetFloatingObjectTopLeftAlignmentItem1, Me.SetFloatingObjectTopCenterAlignmentItem1, Me.SetFloatingObjectTopRightAlignmentItem1, Me.SetFloatingObjectMiddleLeftAlignmentItem1, Me.SetFloatingObjectMiddleCenterAlignmentItem1, Me.SetFloatingObjectMiddleRightAlignmentItem1, Me.SetFloatingObjectBottomLeftAlignmentItem1, Me.SetFloatingObjectBottomCenterAlignmentItem1, Me.SetFloatingObjectBottomRightAlignmentItem1, Me.FloatingObjectBringForwardSubItem1, Me.FloatingObjectBringForwardItem1, Me.FloatingObjectBringToFrontItem1, Me.FloatingObjectBringInFrontOfTextItem1, Me.FloatingObjectSendBackwardSubItem1, Me.FloatingObjectSendBackwardItem1, Me.FloatingObjectSendToBackItem1, Me.FloatingObjectSendBehindTextItem1, Me.BarButtonItem1, Me.BarButtonItem4, Me.BarDockingMenuItem1, Me.BarButtonItem2, Me.BarButtonItem3})
         Me.RibbonControl1.Location = New System.Drawing.Point(0, 0)
-        Me.RibbonControl1.MaxItemId = 244
+        Me.RibbonControl1.MaxItemId = 246
         Me.RibbonControl1.Name = "RibbonControl1"
-        Me.RibbonControl1.PageCategories.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageCategory() {Me.HeaderFooterToolsRibbonPageCategory1, Me.TableToolsRibbonPageCategory1, Me.FloatingPictureToolsRibbonPageCategory1})
-        Me.RibbonControl1.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.FileRibbonPage1, Me.HomeRibbonPage1, Me.InsertRibbonPage1, Me.PageLayoutRibbonPage1, Me.ReferencesRibbonPage1, Me.MailingsRibbonPage1, Me.ReviewRibbonPage1, Me.ViewRibbonPage1, Me.RibbonPage1})
+        Me.RibbonControl1.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.FileRibbonPage1, Me.HomeRibbonPage1, Me.InsertRibbonPage1, Me.PageLayoutRibbonPage1, Me.ReferencesRibbonPage1, Me.MailingsRibbonPage1, Me.RibbonPage1})
         Me.RibbonControl1.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemFontEdit1, Me.RepositoryItemRichEditFontSizeEdit1, Me.RepositoryItemBorderLineStyle1, Me.RepositoryItemBorderLineWeight1, Me.RepositoryItemFloatingObjectOutlineWeight1})
-        Me.RibbonControl1.Size = New System.Drawing.Size(681, 142)
+        Me.RibbonControl1.Size = New System.Drawing.Size(914, 142)
         '
         'UndoItem1
         '
@@ -483,7 +457,7 @@ Partial Class frmWord
         Me.RichEditControl1.Options.CopyPaste.MaintainDocumentSectionSettings = False
         Me.RichEditControl1.Options.Fields.UseCurrentCultureDateTimeFormat = False
         Me.RichEditControl1.Options.MailMerge.KeepLastParagraph = False
-        Me.RichEditControl1.Size = New System.Drawing.Size(681, 290)
+        Me.RichEditControl1.Size = New System.Drawing.Size(914, 380)
         Me.RichEditControl1.TabIndex = 1
         Me.RichEditControl1.Text = "RichEditControl1"
         '
@@ -1714,149 +1688,25 @@ Partial Class frmWord
         Me.BarDockingMenuItem1.Id = 243
         Me.BarDockingMenuItem1.Name = "BarDockingMenuItem1"
         '
-        'HeaderFooterToolsRibbonPageCategory1
+        'BarButtonItem2
         '
-        Me.HeaderFooterToolsRibbonPageCategory1.Color = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(176, Byte), Integer), CType(CType(35, Byte), Integer))
-        Me.HeaderFooterToolsRibbonPageCategory1.Control = Me.RichEditControl1
-        Me.HeaderFooterToolsRibbonPageCategory1.Name = "HeaderFooterToolsRibbonPageCategory1"
-        Me.HeaderFooterToolsRibbonPageCategory1.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.HeaderFooterToolsDesignRibbonPage1})
+        Me.BarButtonItem2.Caption = "Importar Datos"
+        Me.BarButtonItem2.Glyph = CType(resources.GetObject("BarButtonItem2.Glyph"), System.Drawing.Image)
+        Me.BarButtonItem2.Id = 244
+        Me.BarButtonItem2.LargeGlyph = CType(resources.GetObject("BarButtonItem2.LargeGlyph"), System.Drawing.Image)
+        Me.BarButtonItem2.Name = "BarButtonItem2"
+        Me.BarButtonItem2.RibbonStyle = CType(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large Or DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) _
+                    Or DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText), DevExpress.XtraBars.Ribbon.RibbonItemStyles)
         '
-        'HeaderFooterToolsDesignRibbonPage1
+        'BarButtonItem3
         '
-        Me.HeaderFooterToolsDesignRibbonPage1.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.HeaderFooterToolsDesignNavigationRibbonPageGroup1, Me.HeaderFooterToolsDesignOptionsRibbonPageGroup1, Me.HeaderFooterToolsDesignCloseRibbonPageGroup1})
-        Me.HeaderFooterToolsDesignRibbonPage1.Name = "HeaderFooterToolsDesignRibbonPage1"
-        '
-        'HeaderFooterToolsDesignNavigationRibbonPageGroup1
-        '
-        Me.HeaderFooterToolsDesignNavigationRibbonPageGroup1.ItemLinks.Add(Me.GoToPageHeaderItem1)
-        Me.HeaderFooterToolsDesignNavigationRibbonPageGroup1.ItemLinks.Add(Me.GoToPageFooterItem1)
-        Me.HeaderFooterToolsDesignNavigationRibbonPageGroup1.ItemLinks.Add(Me.GoToNextHeaderFooterItem1)
-        Me.HeaderFooterToolsDesignNavigationRibbonPageGroup1.ItemLinks.Add(Me.GoToPreviousHeaderFooterItem1)
-        Me.HeaderFooterToolsDesignNavigationRibbonPageGroup1.ItemLinks.Add(Me.ToggleLinkToPreviousItem1)
-        Me.HeaderFooterToolsDesignNavigationRibbonPageGroup1.Name = "HeaderFooterToolsDesignNavigationRibbonPageGroup1"
-        '
-        'HeaderFooterToolsDesignOptionsRibbonPageGroup1
-        '
-        Me.HeaderFooterToolsDesignOptionsRibbonPageGroup1.ItemLinks.Add(Me.ToggleDifferentFirstPageItem1)
-        Me.HeaderFooterToolsDesignOptionsRibbonPageGroup1.ItemLinks.Add(Me.ToggleDifferentOddAndEvenPagesItem1)
-        Me.HeaderFooterToolsDesignOptionsRibbonPageGroup1.Name = "HeaderFooterToolsDesignOptionsRibbonPageGroup1"
-        '
-        'HeaderFooterToolsDesignCloseRibbonPageGroup1
-        '
-        Me.HeaderFooterToolsDesignCloseRibbonPageGroup1.ItemLinks.Add(Me.ClosePageHeaderFooterItem1)
-        Me.HeaderFooterToolsDesignCloseRibbonPageGroup1.Name = "HeaderFooterToolsDesignCloseRibbonPageGroup1"
-        '
-        'TableToolsRibbonPageCategory1
-        '
-        Me.TableToolsRibbonPageCategory1.Color = System.Drawing.Color.FromArgb(CType(CType(252, Byte), Integer), CType(CType(233, Byte), Integer), CType(CType(20, Byte), Integer))
-        Me.TableToolsRibbonPageCategory1.Control = Me.RichEditControl1
-        Me.TableToolsRibbonPageCategory1.Name = "TableToolsRibbonPageCategory1"
-        Me.TableToolsRibbonPageCategory1.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.TableDesignRibbonPage1, Me.TableLayoutRibbonPage1})
-        '
-        'TableDesignRibbonPage1
-        '
-        Me.TableDesignRibbonPage1.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.TableStyleOptionsRibbonPageGroup1, Me.TableStylesRibbonPageGroup1, Me.TableDrawBordersRibbonPageGroup1})
-        Me.TableDesignRibbonPage1.Name = "TableDesignRibbonPage1"
-        '
-        'TableStyleOptionsRibbonPageGroup1
-        '
-        Me.TableStyleOptionsRibbonPageGroup1.ItemLinks.Add(Me.ToggleFirstRowItem1)
-        Me.TableStyleOptionsRibbonPageGroup1.ItemLinks.Add(Me.ToggleLastRowItem1)
-        Me.TableStyleOptionsRibbonPageGroup1.ItemLinks.Add(Me.ToggleBandedRowsItem1)
-        Me.TableStyleOptionsRibbonPageGroup1.ItemLinks.Add(Me.ToggleFirstColumnItem1)
-        Me.TableStyleOptionsRibbonPageGroup1.ItemLinks.Add(Me.ToggleLastColumnItem1)
-        Me.TableStyleOptionsRibbonPageGroup1.ItemLinks.Add(Me.ToggleBandedColumnsItem1)
-        Me.TableStyleOptionsRibbonPageGroup1.Name = "TableStyleOptionsRibbonPageGroup1"
-        '
-        'TableStylesRibbonPageGroup1
-        '
-        Me.TableStylesRibbonPageGroup1.ItemLinks.Add(Me.GalleryChangeTableStyleItem1)
-        Me.TableStylesRibbonPageGroup1.Name = "TableStylesRibbonPageGroup1"
-        '
-        'TableDrawBordersRibbonPageGroup1
-        '
-        Me.TableDrawBordersRibbonPageGroup1.ItemLinks.Add(Me.ChangeTableBorderLineStyleItem1)
-        Me.TableDrawBordersRibbonPageGroup1.ItemLinks.Add(Me.ChangeTableBorderLineWeightItem1)
-        Me.TableDrawBordersRibbonPageGroup1.ItemLinks.Add(Me.ChangeTableBorderColorItem1)
-        Me.TableDrawBordersRibbonPageGroup1.ItemLinks.Add(Me.ChangeTableBordersItem1)
-        Me.TableDrawBordersRibbonPageGroup1.ItemLinks.Add(Me.ChangeTableCellsShadingItem1)
-        Me.TableDrawBordersRibbonPageGroup1.Name = "TableDrawBordersRibbonPageGroup1"
-        '
-        'TableLayoutRibbonPage1
-        '
-        Me.TableLayoutRibbonPage1.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.TableTableRibbonPageGroup1, Me.TableRowsAndColumnsRibbonPageGroup1, Me.TableMergeRibbonPageGroup1, Me.TableCellSizeRibbonPageGroup1, Me.TableAlignmentRibbonPageGroup1})
-        Me.TableLayoutRibbonPage1.Name = "TableLayoutRibbonPage1"
-        '
-        'TableTableRibbonPageGroup1
-        '
-        Me.TableTableRibbonPageGroup1.ItemLinks.Add(Me.SelectTableElementsItem1)
-        Me.TableTableRibbonPageGroup1.ItemLinks.Add(Me.ToggleShowTableGridLinesItem1)
-        Me.TableTableRibbonPageGroup1.ItemLinks.Add(Me.ShowTablePropertiesFormItem1)
-        Me.TableTableRibbonPageGroup1.Name = "TableTableRibbonPageGroup1"
-        '
-        'TableRowsAndColumnsRibbonPageGroup1
-        '
-        Me.TableRowsAndColumnsRibbonPageGroup1.ItemLinks.Add(Me.DeleteTableElementsItem1)
-        Me.TableRowsAndColumnsRibbonPageGroup1.ItemLinks.Add(Me.InsertTableRowAboveItem1)
-        Me.TableRowsAndColumnsRibbonPageGroup1.ItemLinks.Add(Me.InsertTableRowBelowItem1)
-        Me.TableRowsAndColumnsRibbonPageGroup1.ItemLinks.Add(Me.InsertTableColumnToLeftItem1)
-        Me.TableRowsAndColumnsRibbonPageGroup1.ItemLinks.Add(Me.InsertTableColumnToRightItem1)
-        Me.TableRowsAndColumnsRibbonPageGroup1.Name = "TableRowsAndColumnsRibbonPageGroup1"
-        '
-        'TableMergeRibbonPageGroup1
-        '
-        Me.TableMergeRibbonPageGroup1.ItemLinks.Add(Me.MergeTableCellsItem1)
-        Me.TableMergeRibbonPageGroup1.ItemLinks.Add(Me.ShowSplitTableCellsForm1)
-        Me.TableMergeRibbonPageGroup1.ItemLinks.Add(Me.SplitTableItem1)
-        Me.TableMergeRibbonPageGroup1.Name = "TableMergeRibbonPageGroup1"
-        '
-        'TableCellSizeRibbonPageGroup1
-        '
-        Me.TableCellSizeRibbonPageGroup1.AllowTextClipping = False
-        Me.TableCellSizeRibbonPageGroup1.ItemLinks.Add(Me.ToggleTableAutoFitItem1)
-        Me.TableCellSizeRibbonPageGroup1.Name = "TableCellSizeRibbonPageGroup1"
-        '
-        'TableAlignmentRibbonPageGroup1
-        '
-        Me.TableAlignmentRibbonPageGroup1.Glyph = CType(resources.GetObject("TableAlignmentRibbonPageGroup1.Glyph"), System.Drawing.Image)
-        Me.TableAlignmentRibbonPageGroup1.ItemLinks.Add(Me.ToggleTableCellsTopLeftAlignmentItem1)
-        Me.TableAlignmentRibbonPageGroup1.ItemLinks.Add(Me.ToggleTableCellsMiddleLeftAlignmentItem1)
-        Me.TableAlignmentRibbonPageGroup1.ItemLinks.Add(Me.ToggleTableCellsBottomLeftAlignmentItem1)
-        Me.TableAlignmentRibbonPageGroup1.ItemLinks.Add(Me.ToggleTableCellsTopCenterAlignmentItem1)
-        Me.TableAlignmentRibbonPageGroup1.ItemLinks.Add(Me.ToggleTableCellsMiddleCenterAlignmentItem1)
-        Me.TableAlignmentRibbonPageGroup1.ItemLinks.Add(Me.ToggleTableCellsBottomCenterAlignmentItem1)
-        Me.TableAlignmentRibbonPageGroup1.ItemLinks.Add(Me.ToggleTableCellsTopRightAlignmentItem1)
-        Me.TableAlignmentRibbonPageGroup1.ItemLinks.Add(Me.ToggleTableCellsMiddleRightAlignmentItem1)
-        Me.TableAlignmentRibbonPageGroup1.ItemLinks.Add(Me.ToggleTableCellsBottomRightAlignmentItem1)
-        Me.TableAlignmentRibbonPageGroup1.ItemLinks.Add(Me.ShowTableOptionsFormItem1)
-        Me.TableAlignmentRibbonPageGroup1.Name = "TableAlignmentRibbonPageGroup1"
-        '
-        'FloatingPictureToolsRibbonPageCategory1
-        '
-        Me.FloatingPictureToolsRibbonPageCategory1.Color = System.Drawing.Color.FromArgb(CType(CType(201, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(119, Byte), Integer))
-        Me.FloatingPictureToolsRibbonPageCategory1.Control = Me.RichEditControl1
-        Me.FloatingPictureToolsRibbonPageCategory1.Name = "FloatingPictureToolsRibbonPageCategory1"
-        Me.FloatingPictureToolsRibbonPageCategory1.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.FloatingPictureToolsFormatPage1})
-        '
-        'FloatingPictureToolsFormatPage1
-        '
-        Me.FloatingPictureToolsFormatPage1.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.FloatingPictureToolsShapeStylesPageGroup1, Me.FloatingPictureToolsArrangePageGroup1})
-        Me.FloatingPictureToolsFormatPage1.Name = "FloatingPictureToolsFormatPage1"
-        '
-        'FloatingPictureToolsShapeStylesPageGroup1
-        '
-        Me.FloatingPictureToolsShapeStylesPageGroup1.ItemLinks.Add(Me.ChangeFloatingObjectFillColorItem1)
-        Me.FloatingPictureToolsShapeStylesPageGroup1.ItemLinks.Add(Me.ChangeFloatingObjectOutlineColorItem1)
-        Me.FloatingPictureToolsShapeStylesPageGroup1.ItemLinks.Add(Me.ChangeFloatingObjectOutlineWeightItem1)
-        Me.FloatingPictureToolsShapeStylesPageGroup1.Name = "FloatingPictureToolsShapeStylesPageGroup1"
-        '
-        'FloatingPictureToolsArrangePageGroup1
-        '
-        Me.FloatingPictureToolsArrangePageGroup1.ItemLinks.Add(Me.ChangeFloatingObjectTextWrapTypeItem1)
-        Me.FloatingPictureToolsArrangePageGroup1.ItemLinks.Add(Me.ChangeFloatingObjectAlignmentItem1)
-        Me.FloatingPictureToolsArrangePageGroup1.ItemLinks.Add(Me.FloatingObjectBringForwardSubItem1)
-        Me.FloatingPictureToolsArrangePageGroup1.ItemLinks.Add(Me.FloatingObjectSendBackwardSubItem1)
-        Me.FloatingPictureToolsArrangePageGroup1.Name = "FloatingPictureToolsArrangePageGroup1"
+        Me.BarButtonItem3.Caption = "Generar tabla de contenido"
+        Me.BarButtonItem3.Glyph = CType(resources.GetObject("BarButtonItem3.Glyph"), System.Drawing.Image)
+        Me.BarButtonItem3.Id = 245
+        Me.BarButtonItem3.LargeGlyph = CType(resources.GetObject("BarButtonItem3.LargeGlyph"), System.Drawing.Image)
+        Me.BarButtonItem3.Name = "BarButtonItem3"
+        Me.BarButtonItem3.RibbonStyle = CType(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large Or DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) _
+                    Or DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText), DevExpress.XtraBars.Ribbon.RibbonItemStyles)
         '
         'FileRibbonPage1
         '
@@ -2018,56 +1868,8 @@ Partial Class frmWord
         Me.MailMergeRibbonPageGroup1.ItemLinks.Add(Me.ShowAllFieldCodesItem1)
         Me.MailMergeRibbonPageGroup1.ItemLinks.Add(Me.ShowAllFieldResultsItem1)
         Me.MailMergeRibbonPageGroup1.ItemLinks.Add(Me.ToggleViewMergedDataItem1)
+        Me.MailMergeRibbonPageGroup1.ItemLinks.Add(Me.BarButtonItem2)
         Me.MailMergeRibbonPageGroup1.Name = "MailMergeRibbonPageGroup1"
-        '
-        'ReviewRibbonPage1
-        '
-        Me.ReviewRibbonPage1.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.DocumentProofingRibbonPageGroup1, Me.DocumentProtectionRibbonPageGroup1, Me.DocumentCommentRibbonPageGroup1})
-        Me.ReviewRibbonPage1.Name = "ReviewRibbonPage1"
-        '
-        'DocumentProofingRibbonPageGroup1
-        '
-        Me.DocumentProofingRibbonPageGroup1.ItemLinks.Add(Me.CheckSpellingItem1)
-        Me.DocumentProofingRibbonPageGroup1.ItemLinks.Add(Me.ChangeLanguageItem1)
-        Me.DocumentProofingRibbonPageGroup1.Name = "DocumentProofingRibbonPageGroup1"
-        '
-        'DocumentProtectionRibbonPageGroup1
-        '
-        Me.DocumentProtectionRibbonPageGroup1.ItemLinks.Add(Me.ProtectDocumentItem1)
-        Me.DocumentProtectionRibbonPageGroup1.ItemLinks.Add(Me.ChangeRangeEditingPermissionsItem1)
-        Me.DocumentProtectionRibbonPageGroup1.ItemLinks.Add(Me.UnprotectDocumentItem1)
-        Me.DocumentProtectionRibbonPageGroup1.Name = "DocumentProtectionRibbonPageGroup1"
-        '
-        'DocumentCommentRibbonPageGroup1
-        '
-        Me.DocumentCommentRibbonPageGroup1.ItemLinks.Add(Me.ChangeCommentItem1)
-        Me.DocumentCommentRibbonPageGroup1.ItemLinks.Add(Me.ReviewersItem1)
-        Me.DocumentCommentRibbonPageGroup1.ItemLinks.Add(Me.ReviewingPaneItem1)
-        Me.DocumentCommentRibbonPageGroup1.Name = "DocumentCommentRibbonPageGroup1"
-        '
-        'ViewRibbonPage1
-        '
-        Me.ViewRibbonPage1.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.DocumentViewsRibbonPageGroup1, Me.ShowRibbonPageGroup1, Me.ZoomRibbonPageGroup1})
-        Me.ViewRibbonPage1.Name = "ViewRibbonPage1"
-        '
-        'DocumentViewsRibbonPageGroup1
-        '
-        Me.DocumentViewsRibbonPageGroup1.ItemLinks.Add(Me.SwitchToSimpleViewItem1)
-        Me.DocumentViewsRibbonPageGroup1.ItemLinks.Add(Me.SwitchToDraftViewItem1)
-        Me.DocumentViewsRibbonPageGroup1.ItemLinks.Add(Me.SwitchToPrintLayoutViewItem1)
-        Me.DocumentViewsRibbonPageGroup1.Name = "DocumentViewsRibbonPageGroup1"
-        '
-        'ShowRibbonPageGroup1
-        '
-        Me.ShowRibbonPageGroup1.ItemLinks.Add(Me.ToggleShowHorizontalRulerItem1)
-        Me.ShowRibbonPageGroup1.ItemLinks.Add(Me.ToggleShowVerticalRulerItem1)
-        Me.ShowRibbonPageGroup1.Name = "ShowRibbonPageGroup1"
-        '
-        'ZoomRibbonPageGroup1
-        '
-        Me.ZoomRibbonPageGroup1.ItemLinks.Add(Me.ZoomOutItem1)
-        Me.ZoomRibbonPageGroup1.ItemLinks.Add(Me.ZoomInItem1)
-        Me.ZoomRibbonPageGroup1.Name = "ZoomRibbonPageGroup1"
         '
         'RibbonPage1
         '
@@ -2325,9 +2127,9 @@ Partial Class frmWord
         'DataNavigator1
         '
         Me.DataNavigator1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.DataNavigator1.Location = New System.Drawing.Point(0, 408)
+        Me.DataNavigator1.Location = New System.Drawing.Point(0, 498)
         Me.DataNavigator1.Name = "DataNavigator1"
-        Me.DataNavigator1.Size = New System.Drawing.Size(681, 24)
+        Me.DataNavigator1.Size = New System.Drawing.Size(914, 24)
         Me.DataNavigator1.TabIndex = 3
         Me.DataNavigator1.Text = "DataNavigator1"
         '
@@ -2336,11 +2138,15 @@ Partial Class frmWord
         Me.DockManager1.Form = Me
         Me.DockManager1.TopZIndexControls.AddRange(New String() {"DevExpress.XtraBars.BarDockControl", "DevExpress.XtraBars.StandaloneBarDockControl", "System.Windows.Forms.StatusBar", "System.Windows.Forms.MenuStrip", "System.Windows.Forms.StatusStrip", "DevExpress.XtraBars.Ribbon.RibbonStatusBar", "DevExpress.XtraBars.Ribbon.RibbonControl", "DevExpress.XtraBars.Navigation.OfficeNavigationBar", "DevExpress.XtraBars.Navigation.TileNavPane"})
         '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        '
         'frmWord
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(681, 432)
+        Me.ClientSize = New System.Drawing.Size(914, 522)
         Me.Controls.Add(Me.DataNavigator1)
         Me.Controls.Add(Me.RichEditControl1)
         Me.Controls.Add(Me.RibbonControl1)
@@ -2601,26 +2407,6 @@ Partial Class frmWord
     Friend WithEvents FloatingObjectSendBackwardItem1 As DevExpress.XtraRichEdit.UI.FloatingObjectSendBackwardItem
     Friend WithEvents FloatingObjectSendToBackItem1 As DevExpress.XtraRichEdit.UI.FloatingObjectSendToBackItem
     Friend WithEvents FloatingObjectSendBehindTextItem1 As DevExpress.XtraRichEdit.UI.FloatingObjectSendBehindTextItem
-    Friend WithEvents HeaderFooterToolsRibbonPageCategory1 As DevExpress.XtraRichEdit.UI.HeaderFooterToolsRibbonPageCategory
-    Friend WithEvents HeaderFooterToolsDesignRibbonPage1 As DevExpress.XtraRichEdit.UI.HeaderFooterToolsDesignRibbonPage
-    Friend WithEvents HeaderFooterToolsDesignNavigationRibbonPageGroup1 As DevExpress.XtraRichEdit.UI.HeaderFooterToolsDesignNavigationRibbonPageGroup
-    Friend WithEvents HeaderFooterToolsDesignOptionsRibbonPageGroup1 As DevExpress.XtraRichEdit.UI.HeaderFooterToolsDesignOptionsRibbonPageGroup
-    Friend WithEvents HeaderFooterToolsDesignCloseRibbonPageGroup1 As DevExpress.XtraRichEdit.UI.HeaderFooterToolsDesignCloseRibbonPageGroup
-    Friend WithEvents TableToolsRibbonPageCategory1 As DevExpress.XtraRichEdit.UI.TableToolsRibbonPageCategory
-    Friend WithEvents TableDesignRibbonPage1 As DevExpress.XtraRichEdit.UI.TableDesignRibbonPage
-    Friend WithEvents TableStyleOptionsRibbonPageGroup1 As DevExpress.XtraRichEdit.UI.TableStyleOptionsRibbonPageGroup
-    Friend WithEvents TableStylesRibbonPageGroup1 As DevExpress.XtraRichEdit.UI.TableStylesRibbonPageGroup
-    Friend WithEvents TableDrawBordersRibbonPageGroup1 As DevExpress.XtraRichEdit.UI.TableDrawBordersRibbonPageGroup
-    Friend WithEvents TableLayoutRibbonPage1 As DevExpress.XtraRichEdit.UI.TableLayoutRibbonPage
-    Friend WithEvents TableTableRibbonPageGroup1 As DevExpress.XtraRichEdit.UI.TableTableRibbonPageGroup
-    Friend WithEvents TableRowsAndColumnsRibbonPageGroup1 As DevExpress.XtraRichEdit.UI.TableRowsAndColumnsRibbonPageGroup
-    Friend WithEvents TableMergeRibbonPageGroup1 As DevExpress.XtraRichEdit.UI.TableMergeRibbonPageGroup
-    Friend WithEvents TableCellSizeRibbonPageGroup1 As DevExpress.XtraRichEdit.UI.TableCellSizeRibbonPageGroup
-    Friend WithEvents TableAlignmentRibbonPageGroup1 As DevExpress.XtraRichEdit.UI.TableAlignmentRibbonPageGroup
-    Friend WithEvents FloatingPictureToolsRibbonPageCategory1 As DevExpress.XtraRichEdit.UI.FloatingPictureToolsRibbonPageCategory
-    Friend WithEvents FloatingPictureToolsFormatPage1 As DevExpress.XtraRichEdit.UI.FloatingPictureToolsFormatPage
-    Friend WithEvents FloatingPictureToolsShapeStylesPageGroup1 As DevExpress.XtraRichEdit.UI.FloatingPictureToolsShapeStylesPageGroup
-    Friend WithEvents FloatingPictureToolsArrangePageGroup1 As DevExpress.XtraRichEdit.UI.FloatingPictureToolsArrangePageGroup
     Friend WithEvents FileRibbonPage1 As DevExpress.XtraRichEdit.UI.FileRibbonPage
     Friend WithEvents CommonRibbonPageGroup1 As DevExpress.XtraRichEdit.UI.CommonRibbonPageGroup
     Friend WithEvents HomeRibbonPage1 As DevExpress.XtraRichEdit.UI.HomeRibbonPage
@@ -2644,14 +2430,6 @@ Partial Class frmWord
     Friend WithEvents CaptionsRibbonPageGroup1 As DevExpress.XtraRichEdit.UI.CaptionsRibbonPageGroup
     Friend WithEvents MailingsRibbonPage1 As DevExpress.XtraRichEdit.UI.MailingsRibbonPage
     Friend WithEvents MailMergeRibbonPageGroup1 As DevExpress.XtraRichEdit.UI.MailMergeRibbonPageGroup
-    Friend WithEvents ReviewRibbonPage1 As DevExpress.XtraRichEdit.UI.ReviewRibbonPage
-    Friend WithEvents DocumentProofingRibbonPageGroup1 As DevExpress.XtraRichEdit.UI.DocumentProofingRibbonPageGroup
-    Friend WithEvents DocumentProtectionRibbonPageGroup1 As DevExpress.XtraRichEdit.UI.DocumentProtectionRibbonPageGroup
-    Friend WithEvents DocumentCommentRibbonPageGroup1 As DevExpress.XtraRichEdit.UI.DocumentCommentRibbonPageGroup
-    Friend WithEvents ViewRibbonPage1 As DevExpress.XtraRichEdit.UI.ViewRibbonPage
-    Friend WithEvents DocumentViewsRibbonPageGroup1 As DevExpress.XtraRichEdit.UI.DocumentViewsRibbonPageGroup
-    Friend WithEvents ShowRibbonPageGroup1 As DevExpress.XtraRichEdit.UI.ShowRibbonPageGroup
-    Friend WithEvents ZoomRibbonPageGroup1 As DevExpress.XtraRichEdit.UI.ZoomRibbonPageGroup
     Friend WithEvents RichEditBarController1 As DevExpress.XtraRichEdit.UI.RichEditBarController
     Friend WithEvents DataNavigator1 As DevExpress.XtraEditors.DataNavigator
     Friend WithEvents BarButtonItem1 As DevExpress.XtraBars.BarButtonItem
@@ -2662,4 +2440,7 @@ Partial Class frmWord
     Friend WithEvents BarButtonItem4 As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents RibbonPageGroup2 As DevExpress.XtraBars.Ribbon.RibbonPageGroup
     Friend WithEvents BarDockingMenuItem1 As DevExpress.XtraBars.BarDockingMenuItem
+    Friend WithEvents BarButtonItem2 As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents OpenFileDialog1 As System.Windows.Forms.OpenFileDialog
+    Friend WithEvents BarButtonItem3 As DevExpress.XtraBars.BarButtonItem
 End Class

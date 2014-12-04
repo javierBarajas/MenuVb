@@ -224,12 +224,8 @@ Public Class frmMenu
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
-        If OpenFileDialog1.ShowDialog() = System.Windows.Forms.DialogResult.OK Then
-            Dim frmExcel As New frmExcel(OpenFileDialog1.FileName)
-            frmExcel.Create()
-            Dim frmWord As New frmWord(frmExcel.ExportToDataTable(0))
-            frmWord.Show()
-        End If
+        Dim frmWord As New frmWord()
+        frmWord.Show()
     End Sub
 
     Private Sub radioGroup1_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles radioGroup1.SelectedIndexChanged
