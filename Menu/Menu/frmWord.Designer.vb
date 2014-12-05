@@ -1675,7 +1675,7 @@ Partial Class frmWord
         '
         'BarButtonItem4
         '
-        Me.BarButtonItem4.Caption = "Guardar Word"
+        Me.BarButtonItem4.Caption = "Exportar Word"
         Me.BarButtonItem4.Glyph = CType(resources.GetObject("BarButtonItem4.Glyph"), System.Drawing.Image)
         Me.BarButtonItem4.Id = 241
         Me.BarButtonItem4.LargeGlyph = CType(resources.GetObject("BarButtonItem4.LargeGlyph"), System.Drawing.Image)
