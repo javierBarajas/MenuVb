@@ -65,12 +65,21 @@ Public Class frmExcel
 
     Public Function Worksheet(ByVal index As Integer, Optional ByVal AddNew As Boolean = False) As Worksheet
         If index >= 0 AndAlso index < SpreadsheetControl1.Document.Worksheets.Count Then
+            SpreadsheetControl1.Document.Worksheets.ActiveWorksheet = SpreadsheetControl1.Document.Worksheets(index)
             Return SpreadsheetControl1.Document.Worksheets(index)
         ElseIf AddNew Then
-            Return SpreadsheetControl1.Document.Worksheets.Add()
+            Dim NewWorksheet As Worksheet = SpreadsheetControl1.Document.Worksheets.Add()
+            SpreadsheetControl1.Document.Worksheets.ActiveWorksheet = NewWorksheet
+            Return NewWorksheet
         End If
 
         Return Nothing
+    End Function
+
+    Public Function ActiveWorksheet(ByVal index As Integer)
+        If index >= 0 AndAlso index < SpreadsheetControl1.Document.Worksheets.Count Then
+            SpreadsheetControl1.Document.Worksheets.ActiveWorksheet = SpreadsheetControl1.Document.Worksheets(index)
+        End If
     End Function
 
     Public Function ExportToDataTable(ByVal index As Integer) As DataTable
