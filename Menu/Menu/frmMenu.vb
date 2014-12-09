@@ -152,6 +152,7 @@ Public Class frmMenu
             frmExcel.Create()
 
             Dim iRow As Integer = 0
+            Dim iRowFilter As Integer = 0
             Dim iCol As Integer = 0
             Dim ShowAudit As Boolean = True
             Dim _IsPageOrientationPortrait As Boolean = False
@@ -256,7 +257,8 @@ Public Class frmMenu
                 ' Espacio en blanco
                 iRow += 1
 
-                ' Filtros
+                ' Fila para los filtros
+                iRowFilter = iRow
                 iRow += 1
 
                 For Each PackerID As String In Packers
@@ -289,6 +291,7 @@ Public Class frmMenu
 
                     iRow += data.Rows.Count + 1
                 Next
+
                 ' Quitamos el ultimo signo
                 FormulaTotal = FormulaTotal.Substring(0, FormulaTotal.Length - 1)
 
@@ -302,6 +305,9 @@ Public Class frmMenu
                 .Cells(iRow, 10).Formula = String.Format(FormulaTotal, "K")
                 .Cells(iRow, 11).Formula = String.Format(FormulaTotal, "L")
                 .Cells(iRow, 12).Formula = String.Format(FormulaTotal, "M")
+
+                ' Hacemos los filtros
+                .AutoFilter.Apply(.Range.FromLTRB(0, iRowFilter, (headers.Length - 1), iRow))
 
                 '' LoadDate
                 '.Columns(2).NumberFormat = "mm/dd/yyyy"
