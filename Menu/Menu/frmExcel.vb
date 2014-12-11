@@ -76,11 +76,11 @@ Public Class frmExcel
         Return Nothing
     End Function
 
-    Public Function ActiveWorksheet(ByVal index As Integer)
+    Public Sub ActiveWorksheet(ByVal index As Integer)
         If index >= 0 AndAlso index < SpreadsheetControl1.Document.Worksheets.Count Then
             SpreadsheetControl1.Document.Worksheets.ActiveWorksheet = SpreadsheetControl1.Document.Worksheets(index)
         End If
-    End Function
+    End Sub
 
     Public Function ExportToDataTable(ByVal index As Integer) As DataTable
         If index >= 0 AndAlso index < SpreadsheetControl1.Document.Worksheets.Count Then

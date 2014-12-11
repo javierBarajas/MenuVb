@@ -242,6 +242,8 @@ Public Class frmMenu
                 .Cells(iRow, 0).Font.Size = 12
                 iRow += 1
 
+                .Workbook.Unit = DevExpress.Office.DocumentUnit.Inch
+
                 With .ActiveView
                     ' Ocultamos las lineas del grid
                     .ShowGridlines = False
@@ -252,6 +254,31 @@ Public Class frmMenu
                         .Orientation = PageOrientation.Landscape
                     End If
 
+                    ' Tamaño de papel
+                    .PaperKind = Printing.PaperKind.A4
+
+                    ' Margenes
+                    With .Margins
+                        .Left = 0.05
+                        .Right = 0.05
+                        .Top = 1.5
+                        .Bottom = 1
+                    End With
+                End With
+
+                ' Encabezado y pie de pagina
+                With .HeaderFooterOptions
+                    .DifferentFirst = False
+                    .DifferentOddEven = False
+                    With .OddHeader
+                        .Left = "Print Date: " & HeaderFooterCode.Date
+                        .Center = "Page " & HeaderFooterCode.PageNumber
+                    End With
+
+                    With .OddFooter
+                        .Left = "User: Carlos Fuentes"
+                        .Center = "Grower-Aging Report,Report Date: 13/06/2013 (Packers Format)"
+                    End With
                 End With
 
                 ' Espacio en blanco
