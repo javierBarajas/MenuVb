@@ -52,6 +52,7 @@ Public Class frmWord
                                 RichEditControl1.MailMerge(options, docServer.Document)
                                 docServer.ExportToPdf(fs)
                             End Using
+                            frmFiltros.linq2.Rows(i)("FileName") = IO.Path.GetDirectoryName(saveFileDialog1.FileName.ToString()) + "\" + filename
                         Next i
                     End Using
                 End If
