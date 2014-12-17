@@ -3,7 +3,6 @@
     Private dt As DataTable
     Private linq
     Public linq2 As DataTable
-    Private Selected As Boolean = False
 #End Region
 
 #Region "Constructor"
@@ -55,8 +54,9 @@
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        If ((cbCity.SelectedIndex < 0 Or cbSt.SelectedIndex < 0 Or cbZipCode.SelectedIndex < 0 Or cbCountry.SelectedIndex < 0) And Selected) Then
+        If (cbCity.Text = "" And cbSt.Text = "" And cbZipCode.Text = "" And cbCountry.Text = "" And cbSelected.Text = "") Then
             linq2 = dt
+            Me.Close()
         Else
             Dim dt2 As DataTable = New DataTable()
             With dt2.Columns
@@ -103,22 +103,57 @@
                 If (valor = 1) Then
                     linq2 = (From row In dt.AsEnumerable()
                                         Where row.Field(Of String)(filtros(0, 0)) = filtros(0, 1)
-                                        Select dt2.LoadDataRow(New [Object]() {row.Field(Of String)("Customer"), row.Field(Of String)("Address1"), row.Field(Of String)("Address2"), row.Field(Of String)("City"), row.Field(Of String)("St."), row.Field(Of String)("ZipCode"), row.Field(Of String)("Country"), row.Field(Of String)("Selected")}, False)).CopyToDataTable()
+                                        Select dt2.LoadDataRow(New [Object]() {row.Field(Of String)("Customer"),
+                                                                               row.Field(Of String)("Address1"),
+                                                                               row.Field(Of String)("Address2"),
+                                                                               row.Field(Of String)("City"),
+                                                                               row.Field(Of String)("St."),
+                                                                               row.Field(Of String)("ZipCode"),
+                                                                               row.Field(Of String)("Country"),
+                                                                               row.Field(Of String)("Selected"),
+                                                                               row.Field(Of String)("FileName")}, False)).CopyToDataTable()
                 End If
                 If (valor = 2) Then
                     linq2 = (From row In dt.AsEnumerable()
                                         Where row.Field(Of String)(filtros(0, 0)) = filtros(0, 1) And row.Field(Of String)(filtros(1, 0)) = filtros(1, 1)
-                                        Select dt2.LoadDataRow(New [Object]() {row.Field(Of String)("Customer"), row.Field(Of String)("Address1"), row.Field(Of String)("Address2"), row.Field(Of String)("City"), row.Field(Of String)("St."), row.Field(Of String)("ZipCode"), row.Field(Of String)("Country"), row.Field(Of String)("Selected")}, False)).CopyToDataTable()
+                                        Select dt2.LoadDataRow(New [Object]() {row.Field(Of String)("Customer"),
+                                                                               row.Field(Of String)("Address1"),
+                                                                               row.Field(Of String)("Address2"),
+                                                                               row.Field(Of String)("City"),
+                                                                               row.Field(Of String)("St."),
+                                                                               row.Field(Of String)("ZipCode"),
+                                                                               row.Field(Of String)("Country"),
+                                                                               row.Field(Of String)("Selected"),
+                                                                               row.Field(Of String)("FileName")}, False)).CopyToDataTable()
                 End If
                 If (valor = 3) Then
                     linq2 = (From row In dt.AsEnumerable()
-                                        Where row.Field(Of String)(filtros(0, 0)) = filtros(0, 1) And row.Field(Of String)(filtros(1, 0)) = filtros(1, 1) And row.Field(Of String)(filtros(2, 0)) = filtros(2, 1)
-                                        Select dt2.LoadDataRow(New [Object]() {row.Field(Of String)("Customer"), row.Field(Of String)("Address1"), row.Field(Of String)("Address2"), row.Field(Of String)("City"), row.Field(Of String)("St."), row.Field(Of String)("ZipCode"), row.Field(Of String)("Country"), row.Field(Of String)("Selected")}, False)).CopyToDataTable()
+                                        Where row.Field(Of String)(filtros(0, 0)) = filtros(0, 1) And row.Field(Of String)(filtros(1, 0)) = filtros(1, 1) And
+                                                                                    row.Field(Of String)(filtros(2, 0)) = filtros(2, 1)
+                                        Select dt2.LoadDataRow(New [Object]() {row.Field(Of String)("Customer"),
+                                                                               row.Field(Of String)("Address1"),
+                                                                               row.Field(Of String)("Address2"),
+                                                                               row.Field(Of String)("City"),
+                                                                               row.Field(Of String)("St."),
+                                                                               row.Field(Of String)("ZipCode"),
+                                                                               row.Field(Of String)("Country"),
+                                                                               row.Field(Of String)("Selected"),
+                                                                               row.Field(Of String)("FileName")}, False)).CopyToDataTable()
                 End If
                 If (valor = 4) Then
                     linq2 = (From row In dt.AsEnumerable()
-                                        Where row.Field(Of String)(filtros(0, 0)) = filtros(0, 1) And row.Field(Of String)(filtros(1, 0)) = filtros(1, 1) And row.Field(Of String)(filtros(2, 0)) = filtros(2, 1) And row.Field(Of String)(filtros(3, 0)) = filtros(3, 1)
-                                        Select dt2.LoadDataRow(New [Object]() {row.Field(Of String)("Customer"), row.Field(Of String)("Address1"), row.Field(Of String)("Address2"), row.Field(Of String)("City"), row.Field(Of String)("St."), row.Field(Of String)("ZipCode"), row.Field(Of String)("Country"), row.Field(Of String)("Selected")}, False)).CopyToDataTable()
+                                        Where row.Field(Of String)(filtros(0, 0)) = filtros(0, 1) And row.Field(Of String)(filtros(1, 0)) = filtros(1, 1) And
+                                                                                    row.Field(Of String)(filtros(2, 0)) = filtros(2, 1) And
+                                                                                    row.Field(Of String)(filtros(3, 0)) = filtros(3, 1)
+                                        Select dt2.LoadDataRow(New [Object]() {row.Field(Of String)("Customer"),
+                                                                               row.Field(Of String)("Address1"),
+                                                                               row.Field(Of String)("Address2"),
+                                                                               row.Field(Of String)("City"),
+                                                                               row.Field(Of String)("St."),
+                                                                               row.Field(Of String)("ZipCode"),
+                                                                               row.Field(Of String)("Country"),
+                                                                               row.Field(Of String)("Selected"),
+                                                                                row.Field(Of String)("FileName")}, False)).CopyToDataTable()
                 End If
             Catch
                 Dim dt3 As DataTable = New DataTable()
@@ -146,13 +181,11 @@
             cbCountry.Enabled = True
             cbSt.Enabled = True
             cbZipCode.Enabled = True
-            Selected = True
         Else
             cbCity.Enabled = False
             cbCountry.Enabled = False
             cbSt.Enabled = False
             cbZipCode.Enabled = False
-            Selected = False
         End If
     End Sub
 
@@ -163,7 +196,6 @@
                 cbCountry.Enabled = False
                 cbSt.Enabled = False
                 cbZipCode.Enabled = False
-                Selected = False
 
                 cbCity.Text = ""
                 cbCountry.Text = ""
@@ -174,7 +206,6 @@
                 cbCountry.Enabled = True
                 cbSt.Enabled = True
                 cbZipCode.Enabled = True
-                Selected = True
             End If
         End If
     End Sub
